@@ -1,0 +1,268 @@
+{
+  "prediction": {
+    "direction": "UP",
+    "confidence": 50.1,
+    "upProb": 50.1,
+    "downProb": 49.9,
+    "model": "Logistic Regression",
+    "modelAcc": 56.15,
+    "dataDate": "2026-06-15",
+    "predDate": "2026-06-17",
+    "runTimestamp": "20260616_1550"
+  },
+  "metrics": {
+    "stratTotal": 47.1,
+    "bhTotal": 37.05,
+    "stratAnn": 29.7,
+    "bhAnn": 23.66,
+    "stratSharpe": 1.15,
+    "bhSharpe": 0.83,
+    "stratDD": -17.97,
+    "bhDD": -22.77,
+    "winRate": 56.61,
+    "tradeCount": 348,
+    "daysInMkt": 93.05,
+    "finalVal": 14710.0,
+    "startDate": "2024-12-16",
+    "endDate": "2026-06-15"
+  },
+  "backtestSeries": [],
+  "monthly": [
+    {
+      "month": "2024-12",
+      "stratRet": -0.0409,
+      "bhRet": -0.0504,
+      "trades": 11
+    },
+    {
+      "month": "2025-01",
+      "stratRet": 0.0339,
+      "bhRet": 0.0154,
+      "trades": 13
+    },
+    {
+      "month": "2025-02",
+      "stratRet": -0.0406,
+      "bhRet": -0.0406,
+      "trades": 19
+    },
+    {
+      "month": "2025-03",
+      "stratRet": -0.0208,
+      "bhRet": -0.0476,
+      "trades": 20
+    },
+    {
+      "month": "2025-04",
+      "stratRet": 0.1011,
+      "bhRet": 0.019,
+      "trades": 16
+    },
+    {
+      "month": "2025-05",
+      "stratRet": 0.0574,
+      "bhRet": 0.0862,
+      "trades": 21
+    },
+    {
+      "month": "2025-06",
+      "stratRet": 0.0494,
+      "bhRet": 0.0466,
+      "trades": 18
+    },
+    {
+      "month": "2025-07",
+      "stratRet": 0.0153,
+      "bhRet": 0.0126,
+      "trades": 21
+    },
+    {
+      "month": "2025-08",
+      "stratRet": 0.0172,
+      "bhRet": 0.0212,
+      "trades": 21
+    },
+    {
+      "month": "2025-09",
+      "stratRet": 0.0678,
+      "bhRet": 0.0678,
+      "trades": 21
+    },
+    {
+      "month": "2025-10",
+      "stratRet": 0.0543,
+      "bhRet": 0.0478,
+      "trades": 23
+    },
+    {
+      "month": "2025-11",
+      "stratRet": -0.0139,
+      "bhRet": -0.0236,
+      "trades": 15
+    },
+    {
+      "month": "2025-12",
+      "stratRet": 0.0031,
+      "bhRet": -0.0053,
+      "trades": 22
+    },
+    {
+      "month": "2026-01",
+      "stratRet": 0.0162,
+      "bhRet": 0.0212,
+      "trades": 20
+    },
+    {
+      "month": "2026-02",
+      "stratRet": -0.0308,
+      "bhRet": -0.0288,
+      "trades": 19
+    },
+    {
+      "month": "2026-03",
+      "stratRet": -0.0447,
+      "bhRet": -0.0379,
+      "trades": 22
+    },
+    {
+      "month": "2026-04",
+      "stratRet": 0.153,
+      "bhRet": 0.1538,
+      "trades": 21
+    },
+    {
+      "month": "2026-05",
+      "stratRet": 0.1024,
+      "bhRet": 0.1017,
+      "trades": 20
+    },
+    {
+      "month": "2026-06",
+      "stratRet": -0.0602,
+      "bhRet": -0.0149,
+      "trades": 5
+    }
+  ],
+  "models": [
+    {
+      "name": "Logistic Regression",
+      "train": 60.93,
+      "test": 56.15,
+      "gap": 4.78,
+      "status": "mild overfit",
+      "cv": [
+        53.3,
+        48.3,
+        48.3,
+        59.1,
+        57.9
+      ],
+      "cvMean": 53.36,
+      "cvStd": 4.59,
+      "isBest": true
+    },
+    {
+      "name": "Random Forest",
+      "train": 62.36,
+      "test": 55.35,
+      "gap": 7.02,
+      "status": "mild overfit",
+      "cv": [
+        56.0,
+        48.3,
+        54.4,
+        53.3,
+        57.5
+      ],
+      "cvMean": 53.9,
+      "cvStd": 3.16,
+      "isBest": false
+    },
+    {
+      "name": "Gradient Boosting",
+      "train": 73.33,
+      "test": 54.81,
+      "gap": 18.52,
+      "status": "overfit",
+      "cv": [
+        49.4,
+        44.0,
+        55.6,
+        56.4,
+        54.8
+      ],
+      "cvMean": 52.05,
+      "cvStd": 4.7,
+      "isBest": false
+    }
+  ],
+  "features": [
+    {
+      "feature": "qqq_rvol_10d",
+      "importance": 0.258678
+    },
+    {
+      "feature": "vix_close",
+      "importance": 0.247401
+    },
+    {
+      "feature": "cons_vol_accel",
+      "importance": 0.242392
+    },
+    {
+      "feature": "cons_vol_ratio",
+      "importance": 0.237161
+    },
+    {
+      "feature": "cons_bb_width",
+      "importance": 0.175852
+    },
+    {
+      "feature": "qqq_rvol_5d",
+      "importance": 0.172473
+    },
+    {
+      "feature": "qqq_drawdown",
+      "importance": 0.16501
+    },
+    {
+      "feature": "qqq_bb_width",
+      "importance": 0.146689
+    },
+    {
+      "feature": "cons_rvol_21d",
+      "importance": 0.141943
+    },
+    {
+      "feature": "vix_range",
+      "importance": 0.140487
+    },
+    {
+      "feature": "cons_rvol_5d",
+      "importance": 0.133268
+    },
+    {
+      "feature": "qqq_price_ma50_ratio",
+      "importance": 0.133022
+    }
+  ],
+  "trades": [],
+  "confusionMatrix": {
+    "tp": 205,
+    "fp": 157,
+    "tn": 5,
+    "fn": 7,
+    "precision": 0.566,
+    "recall": 0.967,
+    "f1": 0.714,
+    "accuracy": 0.562
+  },
+  "rollingMetrics": [],
+  "predictionHistory": [],
+  "meta": {
+    "exportedAt": "2026-06-16T15:50:00",
+    "modelTrainedOn": 1185,
+    "testSize": 374,
+    "version": "v6"
+  }
+}

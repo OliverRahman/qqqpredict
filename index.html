@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>QQQ.predict · will the Nasdaq go up tomorrow?</title>
+<style>
+:root{
+  --bg:#101826;
+  --bg-soft:#16202f;
+  --ink:#eaf1f7;
+  --ink-soft:#9fb2c4;
+  --ink-faint:#62758a;
+  --up:#3ddc97;
+  --down:#ff6b81;
+  --edge:#26344a;
+  --warm:#ffcaa8;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  background:radial-gradient(120% 80% at 50% 0%, #18243a 0%, var(--bg) 55%);
+  color:var(--ink);
+  font-family:Arial, Helvetica, "Segoe UI", sans-serif;
+  min-height:100%;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  text-align:center;padding:40px 24px 56px;
+}
+.wrap{width:100%;max-width:880px}
+
+.brand{font-size:21px;font-weight:800;letter-spacing:-.01em;margin-bottom:4px}
+.brand span{color:var(--warm)}
+.tag{font-size:13px;color:var(--ink-faint);margin-bottom:34px}
+
+.question{
+  font-size:21px;font-weight:600;color:var(--ink-soft);
+  line-height:1.4;margin-bottom:22px;
+}
+
+/* ── HERO ROW: verdict in the middle, stats flanking on wide screens ── */
+.hero{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  gap:30px;
+  margin-bottom:8px;
+}
+.flank{display:flex;flex-direction:column;gap:14px}
+.flank.left{align-items:flex-end}
+.flank.right{align-items:flex-start}
+
+.cell{
+  background:var(--bg-soft);border:1px solid var(--edge);border-radius:16px;
+  padding:16px 20px;min-width:150px;text-align:center;
+}
+.cell .n{font-size:28px;font-weight:800}
+.cell .lab{font-size:11.5px;color:var(--ink-faint);margin-top:6px}
+
+.center{min-width:240px}
+.verdict{
+  font-size:clamp(64px,15vw,124px);font-weight:800;line-height:.92;
+  letter-spacing:-.03em;transition:color .35s ease;
+}
+.verdict.up{color:var(--up)}
+.verdict.down{color:var(--down)}
+.verdict.wait{color:var(--ink-faint);font-size:clamp(40px,9vw,72px)}
+.verdict .ar{font-size:.6em}
+
+.sure{font-size:16px;color:var(--ink-soft);margin-top:18px;line-height:1.5}
+.sure b{font-weight:800;font-size:20px}
+.sure.up b{color:var(--up)}
+.sure.down b{color:var(--down)}
+
+.take{
+  font-size:15px;line-height:1.6;color:var(--ink-soft);
+  max-width:460px;margin:18px auto 0;
+}
+.take b{color:var(--ink)}
+
+.forwhen{
+  display:none;margin-top:24px;font-size:12px;color:var(--ink-faint);
+  border:1px solid var(--edge);border-radius:999px;padding:7px 16px;
+}
+
+/* drop zone */
+.drop{
+  margin-top:34px;border:1.5px dashed var(--edge);border-radius:18px;
+  padding:24px 18px;cursor:pointer;transition:.18s;background:transparent;
+}
+.drop:hover,.drop.over{border-color:var(--warm);background:var(--bg-soft)}
+.drop .big{font-size:14.5px;color:var(--ink-soft)}
+.drop .small{font-size:12.5px;color:var(--ink-faint);margin-top:6px}
+.drop.over .big{color:var(--warm)}
+.loaded{color:var(--up)!important}
+
+.note{
+  margin:32px auto 0;font-size:13px;line-height:1.7;color:var(--ink-faint);max-width:560px;
+}
+.note b{color:var(--ink-soft)}
+
+/* how it works */
+.how{
+  margin-top:30px;text-align:left;background:var(--bg-soft);
+  border:1px solid var(--edge);border-radius:18px;overflow:hidden;
+  max-width:640px;margin-left:auto;margin-right:auto;
+}
+.how summary{
+  list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;font-size:16px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.how summary::-webkit-details-marker{display:none}
+.how summary .chev{color:var(--ink-faint);font-size:13px;transition:.2s}
+.how[open] summary .chev{transform:rotate(180deg)}
+.how .body{padding:0 22px 24px;border-top:1px solid var(--edge)}
+.how h4{font-weight:800;font-size:14px;color:var(--warm);margin:20px 0 7px}
+.how p{font-size:13.5px;line-height:1.7;color:var(--ink-soft);margin-bottom:4px}
+.how p b{color:var(--ink)}
+.how .fine{font-size:12px;color:var(--ink-faint);line-height:1.65;margin-top:16px;
+  border-top:1px dashed var(--edge);padding-top:14px}
+
+/* links with icons */
+.links{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.links a{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;color:var(--ink-soft);text-decoration:none;
+  border:1px solid var(--edge);border-radius:999px;padding:9px 18px;transition:.18s;
+}
+.links a:hover{border-color:var(--warm);color:var(--ink)}
+.links svg{width:16px;height:16px;fill:currentColor;flex:none}
+
+.sig{margin-top:24px;font-size:12px;color:var(--ink-faint)}
+.sig b{color:var(--ink-soft);font-weight:600}
+.sig a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--edge);transition:.18s}
+.sig a:hover{color:var(--warm);border-color:var(--warm)}
+
+/* stack the hero on narrow screens */
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;gap:20px}
+  .flank{flex-direction:row;justify-content:center;align-items:stretch!important;flex-wrap:wrap}
+  .flank.left{order:2}.center{order:1}.flank.right{order:3}
+  .cell{min-width:130px;flex:1}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">QQQ<span>.predict</span></div>
+
+  <div class="question">Will the Nasdaq go up tomorrow?</div>
+
+  <div class="hero">
+    <div class="flank left">
+      <div class="cell"><div class="n" id="r-acc">—</div><div class="lab">right this often</div></div>
+      <div class="cell"><div class="n" id="r-sharpe">—</div><div class="lab">Sharpe ratio</div></div>
+    </div>
+
+    <div class="center">
+      <div id="verdict" class="verdict wait">…</div>
+      <div id="sure" class="sure"></div>
+    </div>
+
+    <div class="flank right">
+      <div class="cell"><div class="n" id="r-dd">—</div><div class="lab">worst dip</div></div>
+      <div class="cell"><div class="n" id="r-mkt">—</div><div class="lab">days invested</div></div>
+    </div>
+  </div>
+
+  <p id="take" class="take">Drop in today's results file below to see the robot's guess.</p>
+  <div id="forwhen" class="forwhen"></div>
+
+  <div class="drop" id="drop">
+    <div class="big" id="drop-big">Drop today's <b>qqq_results.json</b> here</div>
+    <div class="small" id="drop-small">or tap to pick the file. it updates the page instantly</div>
+  </div>
+  <input type="file" id="file" accept=".json,application/json" hidden/>
+
+  <p class="note">
+    This is a hobby model made by one person, not advice. It's right about
+    <b>half the time</b>, barely better than a coin, so please don't move real
+    money because of it. Markets do what they want. This is just for fun.
+  </p>
+
+  <details class="how">
+    <summary>How it works <span class="chev">▾</span></summary>
+    <div class="body">
+      <h4>The short version</h4>
+      <p>Every day a computer program looks at how the stock market has been
+      behaving lately and makes one guess: will the Nasdaq-100 (the QQQ fund,
+      basically the 100 biggest tech-ish companies) close <b>higher or lower
+      tomorrow?</b> Then it tells you how sure it is.</p>
+
+      <h4>What it actually looks at</h4>
+      <p>It watches roughly 30 signals, things like recent price moves, how
+      jumpy the market's been (volatility), trading volume, and the VIX
+      "fear gauge." The single most useful signal turns out to be
+      <b>how scared the market is</b>, not where prices are.</p>
+
+      <h4>How it learns</h4>
+      <p>It studies several years of past market days, learns which patterns
+      tended to come before up-days versus down-days, and then applies that to
+      today. It's a fairly simple, deliberately un-fancy model. Fancier ones
+      mostly just memorized noise and did worse.</p>
+
+      <h4>Why it only claims ~53%</h4>
+      <p>Predicting the market day-to-day is genuinely close to a coin flip,
+      and anyone claiming way more than this is usually fooling themselves.
+      A <b>real</b> edge here is small. The honest goal isn't "always right,"
+      it's "right slightly more than half the time, with the losses kept small."</p>
+
+      <p class="fine">Built and run by one person as a research project, still
+      being tested in real time. It hasn't been proven with real money, doesn't
+      account for trading costs, and is shown here purely out of curiosity.
+      Not advice, just a robot's daily guess.</p>
+    </div>
+  </details>
+
+  <div class="links">
+    <a href="https://www.linkedin.com/in/oliver-rahman-25b179330/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+      LinkedIn
+    </a>
+    <a href="https://www.instagram.com/oliver_rahman_acu/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38C1.36 2.67.94 3.34.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.8.72 1.47 1.38 2.13.66.66 1.33 1.08 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.8-.3 1.47-.72 2.13-1.38.66-.66 1.08-1.33 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.8-.72-1.47-1.38-2.13a5.9 5.9 0 0 0-2.13-1.38c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+      Instagram
+    </a>
+    <a href="https://financemastertoday.blogspot.com" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.6 13.2a1.5 1.5 0 0 1-1.5 1.5H9.9a1.5 1.5 0 0 1-1.5-1.5V8.85a1.5 1.5 0 0 1 1.5-1.5h2.55c.2 0 .37.04.53.1.13-.04.27-.06.42-.06h.6a1.5 1.5 0 0 1 1.5 1.5v.6c0 .15-.02.29-.06.42.06.16.1.34.1.53v4.26zm-2.3-5.4h-2.4a.6.6 0 0 0 0 1.2h2.4a.6.6 0 0 0 0-1.2zm.6 3h-3a.6.6 0 0 0 0 1.2h3a.6.6 0 0 0 0-1.2z"/></svg>
+      Finance blog
+    </a>
+  </div>
+
+  <div class="sig" id="sig">made by <a href="https://www.linkedin.com/in/oliver-rahman-25b179330/" target="_blank" rel="noopener"><b>Oliver Rahman</b></a></div>
+</div>
+
+<script>
+function render(data){
+  const p=data.prediction, m=data.metrics;
+  const up = p.direction==="UP";
+  const cls = up?"up":"down";
+
+  const v=document.getElementById('verdict');
+  v.className='verdict '+cls;
+  v.innerHTML = up ? 'UP <span class="ar">↑</span>' : 'DOWN <span class="ar">↓</span>';
+
+  const s=document.getElementById('sure');
+  s.className='sure '+cls;
+  s.innerHTML = `the robot is <b>${p.confidence.toFixed(1)}%</b> sure`;
+
+  const take=document.getElementById('take');
+  const thin = p.confidence < 55;
+  if(thin){
+    take.innerHTML = up
+      ? `A slight lean up today. The edge here is small and honest, not a crystal ball. Most days it's close to a coin flip, and that's the point: a real edge is thin.`
+      : `A slight lean down today. The edge here is small and honest, not a crystal ball. Most days it's close to a coin flip, and that's the point: a real edge is thin.`;
+  } else {
+    take.innerHTML = `For this model that's a fairly confident call. "Confident" still means a thin edge, not a promise, but it's leaning harder than usual.`;
+  }
+
+  const fw=document.getElementById('forwhen');
+  fw.style.display='inline-block';
+  fw.textContent = 'guess for ' + p.predDate;
+
+  document.getElementById('r-acc').textContent    = m.winRate ? Math.round(m.winRate)+'%' : '—';
+  document.getElementById('r-sharpe').textContent = m.stratSharpe.toFixed(2);
+  document.getElementById('r-dd').textContent     = Math.round(m.stratDD)+'%';
+  document.getElementById('r-mkt').textContent    = m.daysInMkt!=null ? Math.round(m.daysInMkt)+'%' : '—';
+
+  document.getElementById('sig').innerHTML =
+    `tested ${m.startDate} to ${m.endDate} · made by <a href="https://www.linkedin.com/in/oliver-rahman-25b179330/" target="_blank" rel="noopener"><b>Oliver Rahman</b></a>`;
+
+  const big=document.getElementById('drop-big');
+  big.innerHTML='✓ loaded, looking good';
+  big.classList.add('loaded');
+  document.getElementById('drop-small').textContent='drop a newer file anytime to update';
+}
+
+// ── file handling
+const drop=document.getElementById('drop');
+const fileInput=document.getElementById('file');
+
+function readFile(file){
+  if(!file) return;
+  const big=document.getElementById('drop-big');
+  if(!/\.json$/i.test(file.name) && file.type!=='application/json'){
+    big.innerHTML="Hmm, that's not a .json file"; big.classList.remove('loaded'); return;
+  }
+  const reader=new FileReader();
+  reader.onload=e=>{
+    try{
+      const data=JSON.parse(e.target.result);
+      if(!data.prediction || !data.metrics) throw new Error('missing fields');
+      render(data);
+    }catch(err){
+      big.innerHTML="Couldn't read that file, is it the right one?"; big.classList.remove('loaded');
+    }
+  };
+  reader.readAsText(file);
+}
+
+drop.addEventListener('click',()=>fileInput.click());
+fileInput.addEventListener('change',e=>readFile(e.target.files[0]));
+['dragenter','dragover'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add('over');}));
+['dragleave','drop'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove('over');}));
+drop.addEventListener('drop',e=>readFile(e.dataTransfer.files[0]));
+['dragover','drop'].forEach(ev=>window.addEventListener(ev,e=>e.preventDefault()));
+window.addEventListener('drop',e=>{ if(e.dataTransfer && e.dataTransfer.files.length) readFile(e.dataTransfer.files[0]); });
+
+// If a qqq_results.json is hosted next to the page, auto-load it.
+// Otherwise stay in the blank "waiting" state — no fake guess shown.
+fetch('qqq_results.json')
+  .then(r=>{ if(!r.ok) throw new Error('none'); return r.json(); })
+  .then(render)
+  .catch(()=>{ /* show nothing until user drops a file */ });
+</script>
+</body>
+</html>
