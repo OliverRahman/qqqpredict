@@ -314,7 +314,7 @@ window.addEventListener('drop',e=>{ if(e.dataTransfer && e.dataTransfer.files.le
 
 // If a qqq_results.json is hosted next to the page, auto-load it.
 // Otherwise stay in the blank "waiting" state, no fake guess shown.
-fetch('qqq_results.json')
+fetch('qqq_results.json?t=' + Date.now())
   .then(r=>{ if(!r.ok) throw new Error('none'); return r.json(); })
   .then(render)
   .catch(()=>{ /* show nothing until user drops a file */ });
