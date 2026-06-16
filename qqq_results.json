@@ -8,7 +8,7 @@
     "modelAcc": 56.15,
     "dataDate": "2026-06-15",
     "predDate": "2026-06-17",
-    "runTimestamp": "20260616_2155"
+    "runTimestamp": "20260616_2206"
   },
   "metrics": {
     "stratTotal": 47.1,
@@ -4360,7 +4360,7 @@
     }
   ],
   "meta": {
-    "exportedAt": "2026-06-16T21:55:29.222786",
+    "exportedAt": "2026-06-16T22:06:36.538172",
     "modelTrainedOn": 1185,
     "testSize": 374,
     "version": "v6"
