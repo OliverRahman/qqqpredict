@@ -166,7 +166,7 @@ body{
     </div>
   </div>
 
-  <p id="take" class="take">Drop in today's results file below to see the robot's guess.</p>
+  <p id="take" class="take">Drop in today's results file below to see the machine's guess.</p>
   <div id="forwhen" class="forwhen"></div>
 
   <div class="drop" id="drop" style="display:none">
@@ -245,7 +245,7 @@ function render(data){
 
   const s=document.getElementById('sure');
   s.className='sure '+cls;
-  s.innerHTML = `the robot is <b>${p.confidence.toFixed(1)}%</b> sure`;
+  s.innerHTML = `the machine is <b>${p.confidence.toFixed(1)}%</b> sure`;
 
   const take=document.getElementById('take');
   const thin = p.confidence < 55;
