@@ -281,7 +281,7 @@ function render(data){
   let recClass, callText, detailText;
   if(!up){
     recClass='out';
-    callText='STAY OUT — sit in cash entirely';
+    callText='STAY OUT, sit in cash entirely';
     detailText='The model predicts DOWN, so the play is to hold no QQQ (sell all).';
   } else if(conf >= 57){
     recClass='full';
@@ -293,7 +293,7 @@ function render(data){
     detailText='The model predicts UP but with medium confidence (52–57%).';
   } else {
     recClass='out';
-    callText='STAY OUT — not worth it';
+    callText='STAY OUT, not worth it';
     detailText='The model predicts UP but confidence is too low (<52%).';
   }
   rec.className='rec '+recClass;
