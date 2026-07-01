@@ -40,10 +40,9 @@ body{
 
 /* ── HERO ROW: verdict in the middle, stats flanking on wide screens ── */
 .hero{
-  display:grid;
-  grid-template-columns:1fr auto 1fr;
+  display:flex;
+  justify-content:center;
   align-items:center;
-  gap:30px;
   margin-bottom:8px;
 }
 .flank{display:flex;flex-direction:column;gap:14px}
@@ -172,17 +171,9 @@ body{
   <div class="question">Will the QQQ ETF go up tomorrow?</div>
 
   <div class="hero">
-    <div class="flank left">
-      <div class="cell"><div class="n" id="r-sharpe">—</div><div class="lab">Sharpe ratio</div></div>
-    </div>
-
     <div class="center">
       <div id="verdict" class="verdict wait">…</div>
       <div id="sure" class="sure"></div>
-    </div>
-
-    <div class="flank right">
-      <div class="cell"><div class="n" id="r-ret">—</div><div class="sub" id="r-ret-sub"></div><div class="lab">total return</div></div>
     </div>
   </div>
 
@@ -329,11 +320,6 @@ function render(data){
   const fw=document.getElementById('forwhen');
   fw.style.display='inline-block';
   fw.textContent = 'guess for ' + p.predDate;
-
-  const fmtPct = x => (x>=0?'+':'') + Math.round(x) + '%';
-  document.getElementById('r-sharpe').textContent = (m.stratSharpe!=null) ? m.stratSharpe.toFixed(2) : '—';
-  document.getElementById('r-ret').textContent    = (m.stratTotal!=null) ? fmtPct(m.stratTotal) : '—';
-  document.getElementById('r-ret-sub').textContent = (m.bhTotal!=null) ? 'vs ' + fmtPct(m.bhTotal) + ' hold' : '';
 
   document.getElementById('sig').innerHTML =
     `tested ${m.startDate} to ${m.endDate} · made by <a href="https://www.linkedin.com/in/oliver-rahman-25b179330/" target="_blank" rel="noopener"><b>Oliver Rahman</b></a>`;
