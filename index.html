@@ -250,13 +250,6 @@ function render(data){
 
   const take=document.getElementById('take');
   const thin = p.confidence < 55;
-  if(thin){
-    take.innerHTML = up
-      ? `A slight lean up today. The edge here is small and honest, not a crystal ball. Most days it's close to a coin flip, and that's the point: a real edge is thin.`
-      : `A slight lean down today. The edge here is small and honest, not a crystal ball. Most days it's close to a coin flip, and that's the point: a real edge is thin.`;
-  } else {
-    take.innerHTML = `For this model that's a fairly confident call. "Confident" still means a thin edge, not a promise, but it's leaning harder than usual.`;
-  }
 
   const fw=document.getElementById('forwhen');
   fw.style.display='inline-block';
