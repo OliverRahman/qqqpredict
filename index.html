@@ -184,7 +184,7 @@ body{
 
     <div class="flank right">
       <div class="cell"><div class="n" id="r-dd">—</div><div class="lab">worst dip</div></div>
-      <div class="cell"><div class="n" id="r-mkt">—</div><div class="lab">time in market</div></div>
+      <div class="cell"><div class="n" id="r-fwd">—</div><div class="lab">days tested (live)</div></div>
     </div>
   </div>
 
@@ -258,6 +258,33 @@ body{
 </div>
 
 <script>
+// Fallback forward-test-day counter, used only if the JSON lacks forwardTestDays.
+// Anchor: 52 trading days completed through 2026-06-30 close.
+// Counts only NYSE-open days (skips weekends + US market holidays), so it
+// never over-counts. Once your export ships forwardTestDays, this is ignored.
+function forwardTestDays(){
+  const anchor = new Date(Date.UTC(2026,5,30)); // 2026-06-30
+  const anchorCount = 52;
+  const holidays = new Set([
+    '2026-07-03','2026-09-07','2026-11-26','2026-12-25',
+    '2027-01-01','2027-01-18','2027-02-15','2027-03-26',
+    '2027-05-31','2027-06-18','2027-07-05','2027-09-06',
+    '2027-11-25','2027-12-24'
+  ]);
+  const today = new Date();
+  const t = new Date(Date.UTC(today.getUTCFullYear(),today.getUTCMonth(),today.getUTCDate()));
+  if(t <= anchor) return anchorCount;
+  let count = anchorCount;
+  const d = new Date(anchor);
+  while(d < t){
+    d.setUTCDate(d.getUTCDate()+1);
+    const dow = d.getUTCDay();
+    const iso = d.toISOString().slice(0,10);
+    if(dow!==0 && dow!==6 && !holidays.has(iso)) count++;
+  }
+  return count;
+}
+
 function render(data){
   const p=data.prediction, m=data.metrics;
   const up = p.direction==="UP";
@@ -272,8 +299,9 @@ function render(data){
   s.innerHTML = `the machine is <b>${p.confidence.toFixed(1)}%</b> sure`;
 
   // ── recommendation, mirrors the notebook sizing logic
-  //    conf here is the UP-probability (prob[1]) as a percent
-  const conf = p.confidence;
+  //    conf = the model's UP-probability (prob[1]) as a percent.
+  //    prefer upProb; fall back to confidence for older JSONs.
+  const conf = (p.upProb!=null) ? p.upProb : p.confidence;
   const rec=document.getElementById('rec');
   const call=document.getElementById('rec-call');
   const detail=document.getElementById('rec-detail');
@@ -281,7 +309,7 @@ function render(data){
   let recClass, callText, detailText;
   if(!up){
     recClass='out';
-    callText='STAY OUT, sit in cash entirely';
+    callText='STAY OUT — sit in cash entirely';
     detailText='The model predicts DOWN, so the play is to hold no QQQ (sell all).';
   } else if(conf >= 57){
     recClass='full';
@@ -293,7 +321,7 @@ function render(data){
     detailText='The model predicts UP but with medium confidence (52–57%).';
   } else {
     recClass='out';
-    callText='STAY OUT, not worth it';
+    callText='STAY OUT — not worth it';
     detailText='The model predicts UP but confidence is too low (<52%).';
   }
   rec.className='rec '+recClass;
@@ -311,7 +339,8 @@ function render(data){
     (m.bhTotal!=null) ? 'vs ' + fmtPct(m.bhTotal) + ' hold' : '';
   document.getElementById('r-sharpe').textContent = (m.stratSharpe!=null) ? m.stratSharpe.toFixed(2) : '—';
   document.getElementById('r-dd').textContent     = (m.stratDD!=null) ? Math.round(m.stratDD)+'%' : '—';
-  document.getElementById('r-mkt').textContent    = (m.daysInMkt!=null) ? Math.round(m.daysInMkt)+'%' : '—';
+  document.getElementById('r-fwd').textContent =
+    (p.forwardTestDays!=null) ? p.forwardTestDays : forwardTestDays();
 
   document.getElementById('sig').innerHTML =
     `tested ${m.startDate} to ${m.endDate} · made by <a href="https://www.linkedin.com/in/oliver-rahman-25b179330/" target="_blank" rel="noopener"><b>Oliver Rahman</b></a>`;
