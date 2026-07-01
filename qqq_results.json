@@ -9,7 +9,7 @@
     "dataDate": "2026-06-30",
     "predDate": "2026-07-02",
     "forwardTestDays": 60,
-    "runTimestamp": "20260701_0434"
+    "runTimestamp": "20260701_0439"
   },
   "metrics": {
     "stratTotal": 57.31,
@@ -4452,7 +4452,7 @@
     }
   ],
   "meta": {
-    "exportedAt": "2026-07-01T04:34:08.593619",
+    "exportedAt": "2026-07-01T04:39:56.524831",
     "modelTrainedOn": 1196,
     "testSize": 373,
     "version": "v6"
