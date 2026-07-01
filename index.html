@@ -78,6 +78,26 @@ body{
 }
 .take b{color:var(--ink)}
 
+/* recommendation banner (replaces the old drop-instruction line) */
+.rec{
+  margin:26px auto 0;max-width:560px;
+  border:1px solid var(--edge);border-radius:14px;
+  padding:16px 22px;background:var(--bg-soft);
+  font-size:15.5px;line-height:1.55;color:var(--ink-soft);
+  transition:border-color .35s ease;
+}
+.rec .head{
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-faint);margin-bottom:7px;
+}
+.rec .call{font-weight:800;font-size:18px;color:var(--ink)}
+.rec.full{border-color:var(--up)}
+.rec.full .call{color:var(--up)}
+.rec.half{border-color:var(--warm)}
+.rec.half .call{color:var(--warm)}
+.rec.out{border-color:var(--down)}
+.rec.out .call{color:var(--down)}
+
 .forwhen{
   display:none;margin-top:24px;font-size:12px;color:var(--ink-faint);
   border:1px solid var(--edge);border-radius:999px;padding:7px 16px;
@@ -167,6 +187,11 @@ body{
     </div>
   </div>
 
+  <div class="rec" id="rec" style="display:none">
+    <div class="head">Recommendation</div>
+    <div class="call" id="rec-call"></div>
+    <div id="rec-detail"></div>
+  </div>
 
   <div class="drop" id="drop" style="display:none">
     <div class="big" id="drop-big">Drop today's <b>qqq_results.json</b> here</div>
@@ -207,7 +232,7 @@ body{
       it's "right slightly more than half the time, with the losses kept small."</p>
 
       <h4>Questions about this model?</h4>
-      <p>Please feel free to DM me on <b>LinkedIn</b> (I respond quickly). You may also email me at <b>OR1045163@wcupa.edu</b if you so wish. Feel free to ask me anything about the model. </p>
+      <p>Please feel free to DM me on <b>LinkedIn</b> (I respond quickly). You may also email me at <b>OR1045163@wcupa.edu</b> if you so wish. Feel free to ask me anything about the model. </p>
     
       <p class="fine">Created as a research project, still
       being tested in real time. Not advice.</p>
@@ -246,8 +271,34 @@ function render(data){
   s.className='sure '+cls;
   s.innerHTML = `the machine is <b>${p.confidence.toFixed(1)}%</b> sure`;
 
-  const take=document.getElementById('take');
-  const thin = p.confidence < 55;
+  // ── recommendation, mirrors the notebook sizing logic
+  //    conf here is the UP-probability (prob[1]) as a percent
+  const conf = p.confidence;
+  const rec=document.getElementById('rec');
+  const call=document.getElementById('rec-call');
+  const detail=document.getElementById('rec-detail');
+  rec.style.display='block';
+  let recClass, callText, detailText;
+  if(!up){
+    recClass='out';
+    callText='STAY OUT — sit in cash entirely';
+    detailText='The model predicts DOWN, so the play is to hold no QQQ (sell all).';
+  } else if(conf >= 57){
+    recClass='full';
+    callText='FULL POSITION';
+    detailText='The model predicts UP with high confidence (≥57%).';
+  } else if(conf >= 52){
+    recClass='half';
+    callText='HALF POSITION';
+    detailText='The model predicts UP but with medium confidence (52–57%).';
+  } else {
+    recClass='out';
+    callText='STAY OUT — not worth it';
+    detailText='The model predicts UP but confidence is too low (<52%).';
+  }
+  rec.className='rec '+recClass;
+  call.textContent=callText;
+  detail.textContent=detailText;
 
   const fw=document.getElementById('forwhen');
   fw.style.display='inline-block';
