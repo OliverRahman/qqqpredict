@@ -40,10 +40,9 @@ body{
 
 /* ── HERO ROW: verdict in the middle, stats flanking on wide screens ── */
 .hero{
-  display:grid;
-  grid-template-columns:1fr auto 1fr;
+  display:flex;
+  justify-content:center;
   align-items:center;
-  gap:30px;
   margin-bottom:8px;
 }
 .flank{display:flex;flex-direction:column;gap:14px}
@@ -172,19 +171,9 @@ body{
   <div class="question">Will the QQQ ETF go up tomorrow?</div>
 
   <div class="hero">
-    <div class="flank left">
-      <div class="cell"><div class="n" id="r-ret">—</div><div class="sub" id="r-ret-sub"></div><div class="lab">total return</div></div>
-      <div class="cell"><div class="n" id="r-sharpe">—</div><div class="lab">Sharpe ratio</div></div>
-    </div>
-
     <div class="center">
       <div id="verdict" class="verdict wait">…</div>
       <div id="sure" class="sure"></div>
-    </div>
-
-    <div class="flank right">
-      <div class="cell"><div class="n" id="r-dd">—</div><div class="lab">worst dip</div></div>
-      <div class="cell"><div class="n" id="r-fwd">—</div><div class="lab">days tested (live)</div></div>
     </div>
   </div>
 
@@ -309,7 +298,7 @@ function render(data){
   let recClass, callText, detailText;
   if(!up){
     recClass='out';
-    callText='STAY OUT — sit in cash entirely';
+    callText='STAY OUT, sit in cash entirely';
     detailText='The model predicts DOWN, so the play is to hold no QQQ (sell all).';
   } else if(conf >= 57){
     recClass='full';
@@ -321,7 +310,7 @@ function render(data){
     detailText='The model predicts UP but with medium confidence (52–57%).';
   } else {
     recClass='out';
-    callText='STAY OUT — not worth it';
+    callText='STAY OUT, not worth it';
     detailText='The model predicts UP but confidence is too low (<52%).';
   }
   rec.className='rec '+recClass;
@@ -331,16 +320,6 @@ function render(data){
   const fw=document.getElementById('forwhen');
   fw.style.display='inline-block';
   fw.textContent = 'guess for ' + p.predDate;
-
-  const fmtPct = x => (x>=0?'+':'') + Math.round(x) + '%';
-  document.getElementById('r-ret').textContent =
-    (m.stratTotal!=null) ? fmtPct(m.stratTotal) : '—';
-  document.getElementById('r-ret-sub').textContent =
-    (m.bhTotal!=null) ? 'vs ' + fmtPct(m.bhTotal) + ' hold' : '';
-  document.getElementById('r-sharpe').textContent = (m.stratSharpe!=null) ? m.stratSharpe.toFixed(2) : '—';
-  document.getElementById('r-dd').textContent     = (m.stratDD!=null) ? Math.round(m.stratDD)+'%' : '—';
-  document.getElementById('r-fwd').textContent =
-    (p.forwardTestDays!=null) ? p.forwardTestDays : forwardTestDays();
 
   document.getElementById('sig').innerHTML =
     `tested ${m.startDate} to ${m.endDate} · made by <a href="https://www.linkedin.com/in/oliver-rahman-25b179330/" target="_blank" rel="noopener"><b>Oliver Rahman</b></a>`;
