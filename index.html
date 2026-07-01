@@ -55,6 +55,7 @@ body{
   padding:16px 20px;min-width:150px;text-align:center;
 }
 .cell .n{font-size:28px;font-weight:800}
+.cell .sub{font-size:11.5px;color:var(--ink-faint);margin-top:3px}
 .cell .lab{font-size:11.5px;color:var(--ink-faint);margin-top:6px}
 
 .center{min-width:240px}
@@ -172,7 +173,7 @@ body{
 
   <div class="hero">
     <div class="flank left">
-      <div class="cell"><div class="n" id="r-acc">—</div><div class="lab">right this often</div></div>
+      <div class="cell"><div class="n" id="r-ret">—</div><div class="sub" id="r-ret-sub"></div><div class="lab">total return</div></div>
       <div class="cell"><div class="n" id="r-sharpe">—</div><div class="lab">Sharpe ratio</div></div>
     </div>
 
@@ -183,12 +184,11 @@ body{
 
     <div class="flank right">
       <div class="cell"><div class="n" id="r-dd">—</div><div class="lab">worst dip</div></div>
-      <div class="cell"><div class="n" id="r-mkt">—</div><div class="lab">days invested</div></div>
+      <div class="cell"><div class="n" id="r-mkt">—</div><div class="lab">time in market</div></div>
     </div>
   </div>
 
   <div class="rec" id="rec" style="display:none">
-    <div class="head">Recommendation</div>
     <div class="call" id="rec-call"></div>
     <div id="rec-detail"></div>
   </div>
@@ -304,10 +304,14 @@ function render(data){
   fw.style.display='inline-block';
   fw.textContent = 'guess for ' + p.predDate;
 
-  document.getElementById('r-acc').textContent    = m.winRate ? Math.round(m.winRate)+'%' : '—';
-  document.getElementById('r-sharpe').textContent = m.stratSharpe.toFixed(2);
-  document.getElementById('r-dd').textContent     = Math.round(m.stratDD)+'%';
-  document.getElementById('r-mkt').textContent    = m.daysInMkt!=null ? Math.round(m.daysInMkt)+'%' : '—';
+  const fmtPct = x => (x>=0?'+':'') + Math.round(x) + '%';
+  document.getElementById('r-ret').textContent =
+    (m.stratTotal!=null) ? fmtPct(m.stratTotal) : '—';
+  document.getElementById('r-ret-sub').textContent =
+    (m.bhTotal!=null) ? 'vs ' + fmtPct(m.bhTotal) + ' hold' : '';
+  document.getElementById('r-sharpe').textContent = (m.stratSharpe!=null) ? m.stratSharpe.toFixed(2) : '—';
+  document.getElementById('r-dd').textContent     = (m.stratDD!=null) ? Math.round(m.stratDD)+'%' : '—';
+  document.getElementById('r-mkt').textContent    = (m.daysInMkt!=null) ? Math.round(m.daysInMkt)+'%' : '—';
 
   document.getElementById('sig').innerHTML =
     `tested ${m.startDate} to ${m.endDate} · made by <a href="https://www.linkedin.com/in/oliver-rahman-25b179330/" target="_blank" rel="noopener"><b>Oliver Rahman</b></a>`;
