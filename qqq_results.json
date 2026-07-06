@@ -9,7 +9,7 @@
     "dataDate": "2026-07-02",
     "predDate": "2026-07-07",
     "forwardTestDays": 60,
-    "runTimestamp": "20260706_2111"
+    "runTimestamp": "20260706_2119"
   },
   "metrics": {
     "stratTotal": 27.25,
@@ -3184,52 +3184,52 @@
   ],
   "features": [
     {
-      "feature": "cons_ret_1d",
-      "importance": 0.0
+      "feature": "cons_vol_ret",
+      "importance": 0.041438
     },
     {
-      "feature": "cons_ret_3d",
-      "importance": 0.0
+      "feature": "qqq_vol_accel",
+      "importance": 0.036281
     },
     {
-      "feature": "cons_ret_5d",
-      "importance": 0.0
+      "feature": "qqq_vol_ret",
+      "importance": 0.033368
     },
     {
-      "feature": "cons_ret_10d",
-      "importance": 0.0
+      "feature": "vix_range",
+      "importance": 0.031289
     },
     {
-      "feature": "cons_ret_21d",
-      "importance": 0.0
+      "feature": "qqq_price_ma21_ratio",
+      "importance": 0.030927
+    },
+    {
+      "feature": "vix_close",
+      "importance": 0.02877
     },
     {
       "feature": "cons_rvol_5d",
-      "importance": 0.0
+      "importance": 0.028737
     },
     {
-      "feature": "cons_rvol_10d",
-      "importance": 0.0
+      "feature": "qqq_vol_ratio",
+      "importance": 0.027283
     },
     {
-      "feature": "cons_rvol_21d",
-      "importance": 0.0
+      "feature": "qqq_rvol_21d",
+      "importance": 0.026606
     },
     {
-      "feature": "cons_vol_ratio",
-      "importance": 0.0
+      "feature": "qqq_macd_hist",
+      "importance": 0.026343
     },
     {
-      "feature": "cons_vol_accel",
-      "importance": 0.0
+      "feature": "qqq_rvol_10d",
+      "importance": 0.025168
     },
     {
-      "feature": "cons_rsi",
-      "importance": 0.0
-    },
-    {
-      "feature": "cons_rsi_z",
-      "importance": 0.0
+      "feature": "cons_bb_width",
+      "importance": 0.024612
     }
   ],
   "trades": [
@@ -4308,7 +4308,7 @@
     }
   ],
   "meta": {
-    "exportedAt": "2026-07-06T21:11:21.399597",
+    "exportedAt": "2026-07-06T21:19:06.751679",
     "modelTrainedOn": 1198,
     "testSize": 373,
     "version": "v6"
