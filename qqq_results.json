@@ -1,15 +1,15 @@
 {
   "prediction": {
-    "direction": "UP",
-    "confidence": 51.5,
-    "upProb": 51.5,
-    "downProb": 48.5,
+    "direction": "DOWN",
+    "confidence": 51.1,
+    "upProb": 48.9,
+    "downProb": 51.1,
     "model": "Logistic Regression",
-    "modelAcc": 57.49,
+    "modelAcc": 57.75,
     "dataDate": "2026-07-15",
     "predDate": "2026-07-17",
     "forwardTestDays": 60,
-    "runTimestamp": "20260716_0002"
+    "runTimestamp": "20260716_0431"
   },
   "metrics": {
     "stratTotal": 55.39,
@@ -23,7 +23,7 @@
     "winRate": 58.36,
     "tradeCount": 329,
     "daysInMkt": 87.97,
-    "finalVal": 15538.56,
+    "finalVal": 15538.55,
     "startDate": "2025-01-16",
     "endDate": "2026-07-15"
   },
@@ -31,7 +31,7 @@
     {
       "date": "2025-01-16",
       "stratVal": 10084.39,
-      "bhVal": 10168.78,
+      "bhVal": 10168.79,
       "spyVal": 10000.0,
       "position": 0.5,
       "signalConf": 0.531
@@ -96,7 +96,7 @@
       "date": "2025-01-29",
       "stratVal": 10224.84,
       "bhVal": 10194.32,
-      "spyVal": 10171.9,
+      "spyVal": 10171.89,
       "position": 0.0,
       "signalConf": 0.515
     },
@@ -110,8 +110,8 @@
     },
     {
       "date": "2025-01-31",
-      "stratVal": 10169.13,
-      "bhVal": 10098.04,
+      "stratVal": 10169.12,
+      "bhVal": 10098.03,
       "spyVal": 10172.06,
       "position": 0.5,
       "signalConf": 0.535
@@ -190,8 +190,8 @@
     },
     {
       "date": "2025-02-14",
-      "stratVal": 10522.22,
-      "bhVal": 10512.4,
+      "stratVal": 10522.21,
+      "bhVal": 10512.39,
       "spyVal": 10305.25,
       "position": 1.0,
       "signalConf": 0.594
@@ -207,14 +207,14 @@
     {
       "date": "2025-02-19",
       "stratVal": 10502.8,
-      "bhVal": 10470.68,
+      "bhVal": 10470.69,
       "spyVal": 10359.85,
       "position": 0.5,
       "signalConf": 0.562
     },
     {
       "date": "2025-02-20",
-      "stratVal": 10284.83,
+      "stratVal": 10284.82,
       "bhVal": 10253.37,
       "spyVal": 10316.75,
       "position": 1.0,
@@ -232,21 +232,21 @@
       "date": "2025-02-24",
       "stratVal": 10159.71,
       "bhVal": 10004.68,
-      "spyVal": 10094.15,
+      "spyVal": 10094.14,
       "position": 0.5,
       "signalConf": 0.558
     },
     {
       "date": "2025-02-25",
-      "stratVal": 10184.26,
-      "bhVal": 10028.85,
-      "spyVal": 10043.95,
+      "stratVal": 10184.25,
+      "bhVal": 10028.84,
+      "spyVal": 10043.94,
       "position": 1.0,
       "signalConf": 0.62
     },
     {
       "date": "2025-02-26",
-      "stratVal": 9901.43,
+      "stratVal": 9901.42,
       "bhVal": 9750.33,
       "spyVal": 10049.02,
       "position": 1.0,
@@ -262,7 +262,7 @@
     },
     {
       "date": "2025-02-28",
-      "stratVal": 9837.7,
+      "stratVal": 9837.69,
       "bhVal": 9687.57,
       "spyVal": 10042.93,
       "position": 1.0,
@@ -280,7 +280,7 @@
       "date": "2025-03-04",
       "stratVal": 9950.9,
       "bhVal": 9784.24,
-      "spyVal": 9750.19,
+      "spyVal": 9750.18,
       "position": 1.0,
       "signalConf": 0.588
     },
@@ -295,7 +295,7 @@
     {
       "date": "2025-03-06",
       "stratVal": 9712.74,
-      "bhVal": 9585.05,
+      "bhVal": 9585.06,
       "spyVal": 9680.04,
       "position": 0.5,
       "signalConf": 0.564
@@ -318,9 +318,9 @@
     },
     {
       "date": "2025-03-11",
-      "stratVal": 9430.35,
+      "stratVal": 9430.34,
       "bhVal": 9295.24,
-      "spyVal": 9396.26,
+      "spyVal": 9396.25,
       "position": 1.0,
       "signalConf": 0.614
     },
@@ -328,13 +328,13 @@
       "date": "2025-03-12",
       "stratVal": 9260.69,
       "bhVal": 9128.01,
-      "spyVal": 9446.11,
+      "spyVal": 9446.12,
       "position": 1.0,
       "signalConf": 0.59
     },
     {
       "date": "2025-03-13",
-      "stratVal": 9484.53,
+      "stratVal": 9484.52,
       "bhVal": 9348.64,
       "spyVal": 9320.19,
       "position": 1.0,
@@ -358,9 +358,9 @@
     },
     {
       "date": "2025-03-18",
-      "stratVal": 9527.98,
+      "stratVal": 9527.97,
       "bhVal": 9372.61,
-      "spyVal": 9482.46,
+      "spyVal": 9482.45,
       "position": 0.5,
       "signalConf": 0.535
     },
@@ -374,7 +374,7 @@
     },
     {
       "date": "2025-03-20",
-      "stratVal": 9527.51,
+      "stratVal": 9527.5,
       "bhVal": 9371.64,
       "spyVal": 9558.01,
       "position": 0.5,
@@ -390,7 +390,7 @@
     },
     {
       "date": "2025-03-24",
-      "stratVal": 9792.15,
+      "stratVal": 9792.14,
       "bhVal": 9631.95,
       "spyVal": 9732.39,
       "position": 1.0,
@@ -398,7 +398,7 @@
     },
     {
       "date": "2025-03-25",
-      "stratVal": 9702.06,
+      "stratVal": 9702.05,
       "bhVal": 9454.71,
       "spyVal": 9755.78,
       "position": 0.5,
@@ -415,14 +415,14 @@
     {
       "date": "2025-03-27",
       "stratVal": 9674.41,
-      "bhVal": 9153.33,
+      "bhVal": 9153.34,
       "spyVal": 9613.72,
       "position": 0.0,
       "signalConf": 0.507
     },
     {
       "date": "2025-03-28",
-      "stratVal": 9674.21,
+      "stratVal": 9674.2,
       "bhVal": 9152.94,
       "spyVal": 9420.11,
       "position": 0.5,
@@ -438,7 +438,7 @@
     },
     {
       "date": "2025-04-01",
-      "stratVal": 9823.37,
+      "stratVal": 9823.36,
       "bhVal": 9294.07,
       "spyVal": 9510.13,
       "position": 1.0,
@@ -446,9 +446,9 @@
     },
     {
       "date": "2025-04-02",
-      "stratVal": 9297.49,
+      "stratVal": 9297.48,
       "bhVal": 8796.52,
-      "spyVal": 9570.32,
+      "spyVal": 9570.31,
       "position": 1.0,
       "signalConf": 0.649
     },
@@ -503,7 +503,7 @@
     {
       "date": "2025-04-11",
       "stratVal": 9932.29,
-      "bhVal": 8929.64,
+      "bhVal": 8929.65,
       "spyVal": 9051.89,
       "position": 0.0,
       "signalConf": 0.196
@@ -526,7 +526,7 @@
     },
     {
       "date": "2025-04-16",
-      "stratVal": 9930.51,
+      "stratVal": 9930.5,
       "bhVal": 8668.48,
       "spyVal": 8911.52,
       "position": 1.0,
@@ -534,16 +534,16 @@
     },
     {
       "date": "2025-04-17",
-      "stratVal": 9684.76,
+      "stratVal": 9684.75,
       "bhVal": 8453.96,
-      "spyVal": 8924.24,
+      "spyVal": 8924.23,
       "position": 1.0,
       "signalConf": 0.636
     },
     {
       "date": "2025-04-21",
       "stratVal": 9939.0,
-      "bhVal": 8675.89,
+      "bhVal": 8675.9,
       "spyVal": 8711.81,
       "position": 1.0,
       "signalConf": 0.703
@@ -558,7 +558,7 @@
     },
     {
       "date": "2025-04-23",
-      "stratVal": 10450.4,
+      "stratVal": 10450.39,
       "bhVal": 9122.3,
       "spyVal": 9076.98,
       "position": 1.0,
@@ -566,15 +566,15 @@
     },
     {
       "date": "2025-04-24",
-      "stratVal": 10508.65,
-      "bhVal": 9223.99,
+      "stratVal": 10508.64,
+      "bhVal": 9224.0,
       "spyVal": 9268.04,
       "position": 0.5,
       "signalConf": 0.556
     },
     {
       "date": "2025-04-25",
-      "stratVal": 10506.98,
+      "stratVal": 10506.97,
       "bhVal": 9221.07,
       "spyVal": 9335.01,
       "position": 0.5,
@@ -582,7 +582,7 @@
     },
     {
       "date": "2025-04-28",
-      "stratVal": 10541.68,
+      "stratVal": 10541.67,
       "bhVal": 9281.97,
       "spyVal": 9338.57,
       "position": 0.5,
@@ -591,8 +591,8 @@
     {
       "date": "2025-04-29",
       "stratVal": 10541.01,
-      "bhVal": 9280.8,
-      "spyVal": 9397.4,
+      "bhVal": 9280.79,
+      "spyVal": 9397.39,
       "position": 0.5,
       "signalConf": 0.539
     },
@@ -606,7 +606,7 @@
     },
     {
       "date": "2025-05-01",
-      "stratVal": 10837.2,
+      "stratVal": 10837.19,
       "bhVal": 9541.57,
       "spyVal": 9467.75,
       "position": 1.0,
@@ -614,7 +614,7 @@
     },
     {
       "date": "2025-05-02",
-      "stratVal": 10772.91,
+      "stratVal": 10772.9,
       "bhVal": 9484.97,
       "spyVal": 9608.29,
       "position": 1.0,
@@ -632,13 +632,13 @@
       "date": "2025-05-06",
       "stratVal": 10714.6,
       "bhVal": 9433.63,
-      "spyVal": 9473.35,
+      "spyVal": 9473.34,
       "position": 1.0,
       "signalConf": 0.668
     },
     {
       "date": "2025-05-07",
-      "stratVal": 10825.23,
+      "stratVal": 10825.22,
       "bhVal": 9531.03,
       "spyVal": 9513.18,
       "position": 1.0,
@@ -654,7 +654,7 @@
     },
     {
       "date": "2025-05-09",
-      "stratVal": 11038.5,
+      "stratVal": 11038.49,
       "bhVal": 9912.83,
       "spyVal": 9567.26,
       "position": 0.5,
@@ -670,7 +670,7 @@
     },
     {
       "date": "2025-05-13",
-      "stratVal": 11240.32,
+      "stratVal": 11240.31,
       "bhVal": 10124.22,
       "spyVal": 9948.71,
       "position": 0.5,
@@ -686,7 +686,7 @@
     },
     {
       "date": "2025-05-15",
-      "stratVal": 11270.97,
+      "stratVal": 11270.96,
       "bhVal": 10179.46,
       "spyVal": 10010.08,
       "position": 0.5,
@@ -718,7 +718,7 @@
     },
     {
       "date": "2025-05-21",
-      "stratVal": 11103.34,
+      "stratVal": 11103.33,
       "bhVal": 10032.87,
       "spyVal": 9881.23,
       "position": 1.0,
@@ -752,7 +752,7 @@
       "date": "2025-05-28",
       "stratVal": 11220.42,
       "bhVal": 10148.62,
-      "spyVal": 9963.8,
+      "spyVal": 9963.79,
       "position": 0.5,
       "signalConf": 0.544
     },
@@ -782,7 +782,7 @@
     },
     {
       "date": "2025-06-03",
-      "stratVal": 11315.88,
+      "stratVal": 11315.87,
       "bhVal": 10321.17,
       "spyVal": 10105.52,
       "position": 0.5,
@@ -790,7 +790,7 @@
     },
     {
       "date": "2025-06-04",
-      "stratVal": 11315.88,
+      "stratVal": 11315.87,
       "bhVal": 10243.48,
       "spyVal": 10102.81,
       "position": 0.0,
@@ -799,7 +799,7 @@
     {
       "date": "2025-06-05",
       "stratVal": 11426.49,
-      "bhVal": 10343.62,
+      "bhVal": 10343.61,
       "spyVal": 10053.98,
       "position": 1.0,
       "signalConf": 0.59
@@ -814,7 +814,7 @@
     },
     {
       "date": "2025-06-09",
-      "stratVal": 11519.0,
+      "stratVal": 11518.99,
       "bhVal": 10427.35,
       "spyVal": 10166.38,
       "position": 1.0,
@@ -824,13 +824,13 @@
       "date": "2025-06-10",
       "stratVal": 11480.18,
       "bhVal": 10392.22,
-      "spyVal": 10224.03,
+      "spyVal": 10224.02,
       "position": 1.0,
       "signalConf": 0.673
     },
     {
       "date": "2025-06-11",
-      "stratVal": 11507.14,
+      "stratVal": 11507.13,
       "bhVal": 10416.62,
       "spyVal": 10194.86,
       "position": 1.0,
@@ -838,7 +838,7 @@
     },
     {
       "date": "2025-06-12",
-      "stratVal": 11362.67,
+      "stratVal": 11362.66,
       "bhVal": 10285.84,
       "spyVal": 10235.38,
       "position": 1.0,
@@ -847,7 +847,7 @@
     {
       "date": "2025-06-13",
       "stratVal": 11520.72,
-      "bhVal": 10428.91,
+      "bhVal": 10428.92,
       "spyVal": 10120.95,
       "position": 1.0,
       "signalConf": 0.606
@@ -862,7 +862,7 @@
     },
     {
       "date": "2025-06-17",
-      "stratVal": 11406.44,
+      "stratVal": 11406.43,
       "bhVal": 10325.46,
       "spyVal": 10129.94,
       "position": 1.0,
@@ -911,7 +911,7 @@
     {
       "date": "2025-06-26",
       "stratVal": 11831.56,
-      "bhVal": 10710.29,
+      "bhVal": 10710.3,
       "spyVal": 10403.71,
       "position": 1.0,
       "signalConf": 0.609
@@ -934,15 +934,15 @@
     },
     {
       "date": "2025-07-01",
-      "stratVal": 11940.6,
+      "stratVal": 11940.59,
       "bhVal": 10763.25,
-      "spyVal": 10501.99,
+      "spyVal": 10501.98,
       "position": 1.0,
       "signalConf": 0.654
     },
     {
       "date": "2025-07-02",
-      "stratVal": 12058.1,
+      "stratVal": 12058.09,
       "bhVal": 10869.16,
       "spyVal": 10549.59,
       "position": 1.0,
@@ -950,7 +950,7 @@
     },
     {
       "date": "2025-07-03",
-      "stratVal": 11967.27,
+      "stratVal": 11967.26,
       "bhVal": 10787.29,
       "spyVal": 10632.74,
       "position": 1.0,
@@ -958,15 +958,15 @@
     },
     {
       "date": "2025-07-07",
-      "stratVal": 11973.99,
-      "bhVal": 10793.34,
+      "stratVal": 11973.98,
+      "bhVal": 10793.35,
       "spyVal": 10553.5,
       "position": 1.0,
       "signalConf": 0.602
     },
     {
       "date": "2025-07-08",
-      "stratVal": 12058.75,
+      "stratVal": 12058.74,
       "bhVal": 10869.75,
       "spyVal": 10547.72,
       "position": 1.0,
@@ -974,7 +974,7 @@
     },
     {
       "date": "2025-07-09",
-      "stratVal": 12041.41,
+      "stratVal": 12041.4,
       "bhVal": 10854.12,
       "spyVal": 10610.98,
       "position": 1.0,
@@ -982,7 +982,7 @@
     },
     {
       "date": "2025-07-10",
-      "stratVal": 12014.31,
+      "stratVal": 12014.3,
       "bhVal": 10829.69,
       "spyVal": 10640.9,
       "position": 1.0,
@@ -1006,7 +1006,7 @@
     },
     {
       "date": "2025-07-15",
-      "stratVal": 12070.23,
+      "stratVal": 12070.22,
       "bhVal": 10890.07,
       "spyVal": 10578.33,
       "position": 1.0,
@@ -1014,7 +1014,7 @@
     },
     {
       "date": "2025-07-16",
-      "stratVal": 12167.91,
+      "stratVal": 12167.9,
       "bhVal": 10978.2,
       "spyVal": 10613.69,
       "position": 1.0,
@@ -1030,7 +1030,7 @@
     },
     {
       "date": "2025-07-18",
-      "stratVal": 12219.24,
+      "stratVal": 12219.23,
       "bhVal": 11024.52,
       "spyVal": 10670.83,
       "position": 1.0,
@@ -1038,7 +1038,7 @@
     },
     {
       "date": "2025-07-21",
-      "stratVal": 12156.0,
+      "stratVal": 12155.99,
       "bhVal": 10967.46,
       "spyVal": 10691.06,
       "position": 1.0,
@@ -1062,7 +1062,7 @@
     },
     {
       "date": "2025-07-24",
-      "stratVal": 12266.89,
+      "stratVal": 12266.88,
       "bhVal": 11067.51,
       "spyVal": 10787.13,
       "position": 1.0,
@@ -1070,23 +1070,23 @@
     },
     {
       "date": "2025-07-25",
-      "stratVal": 12305.23,
+      "stratVal": 12305.22,
       "bhVal": 11102.09,
-      "spyVal": 10832.7,
+      "spyVal": 10832.69,
       "position": 1.0,
       "signalConf": 0.624
     },
     {
       "date": "2025-07-28",
-      "stratVal": 12286.17,
+      "stratVal": 12286.16,
       "bhVal": 11084.9,
-      "spyVal": 10829.98,
+      "spyVal": 10829.97,
       "position": 1.0,
       "signalConf": 0.611
     },
     {
       "date": "2025-07-29",
-      "stratVal": 12302.63,
+      "stratVal": 12302.62,
       "bhVal": 11099.75,
       "spyVal": 10801.41,
       "position": 1.0,
@@ -1118,23 +1118,23 @@
     },
     {
       "date": "2025-08-04",
-      "stratVal": 12134.77,
+      "stratVal": 12134.76,
       "bhVal": 10948.31,
-      "spyVal": 10731.87,
+      "spyVal": 10731.86,
       "position": 1.0,
       "signalConf": 0.769
     },
     {
       "date": "2025-08-05",
-      "stratVal": 12287.47,
+      "stratVal": 12287.46,
       "bhVal": 11086.07,
-      "spyVal": 10677.46,
+      "spyVal": 10677.45,
       "position": 1.0,
       "signalConf": 0.735
     },
     {
       "date": "2025-08-06",
-      "stratVal": 12329.05,
+      "stratVal": 12329.04,
       "bhVal": 11123.59,
       "spyVal": 10759.24,
       "position": 1.0,
@@ -1142,7 +1142,7 @@
     },
     {
       "date": "2025-08-07",
-      "stratVal": 12444.06,
+      "stratVal": 12444.05,
       "bhVal": 11227.35,
       "spyVal": 10750.23,
       "position": 1.0,
@@ -1150,9 +1150,9 @@
     },
     {
       "date": "2025-08-08",
-      "stratVal": 12407.24,
+      "stratVal": 12407.23,
       "bhVal": 11194.13,
-      "spyVal": 10834.06,
+      "spyVal": 10834.05,
       "position": 1.0,
       "signalConf": 0.714
     },
@@ -1174,7 +1174,7 @@
     },
     {
       "date": "2025-08-13",
-      "stratVal": 12559.72,
+      "stratVal": 12559.71,
       "bhVal": 11331.7,
       "spyVal": 10965.15,
       "position": 1.0,
@@ -1182,7 +1182,7 @@
     },
     {
       "date": "2025-08-14",
-      "stratVal": 12504.49,
+      "stratVal": 12504.48,
       "bhVal": 11281.87,
       "spyVal": 10966.17,
       "position": 1.0,
@@ -1198,7 +1198,7 @@
     },
     {
       "date": "2025-08-18",
-      "stratVal": 12414.71,
+      "stratVal": 12414.7,
       "bhVal": 11124.37,
       "spyVal": 10938.11,
       "position": 0.5,
@@ -1214,7 +1214,7 @@
     },
     {
       "date": "2025-08-20",
-      "stratVal": 12283.87,
+      "stratVal": 12283.86,
       "bhVal": 11007.13,
       "spyVal": 10849.87,
       "position": 1.0,
@@ -1222,7 +1222,7 @@
     },
     {
       "date": "2025-08-21",
-      "stratVal": 12378.62,
+      "stratVal": 12378.61,
       "bhVal": 11176.94,
       "spyVal": 10806.34,
       "position": 0.5,
@@ -1230,7 +1230,7 @@
     },
     {
       "date": "2025-08-22",
-      "stratVal": 12342.91,
+      "stratVal": 12342.9,
       "bhVal": 11144.69,
       "spyVal": 10972.29,
       "position": 1.0,
@@ -1238,7 +1238,7 @@
     },
     {
       "date": "2025-08-25",
-      "stratVal": 12367.69,
+      "stratVal": 12367.68,
       "bhVal": 11189.44,
       "spyVal": 10924.0,
       "position": 0.5,
@@ -1246,7 +1246,7 @@
     },
     {
       "date": "2025-08-26",
-      "stratVal": 12386.7,
+      "stratVal": 12386.69,
       "bhVal": 11206.64,
       "spyVal": 10969.74,
       "position": 1.0,
@@ -1254,15 +1254,15 @@
     },
     {
       "date": "2025-08-27",
-      "stratVal": 12425.47,
+      "stratVal": 12425.46,
       "bhVal": 11276.79,
-      "spyVal": 10994.74,
+      "spyVal": 10994.73,
       "position": 0.5,
       "signalConf": 0.548
     },
     {
       "date": "2025-08-28",
-      "stratVal": 12281.64,
+      "stratVal": 12281.63,
       "bhVal": 11146.26,
       "spyVal": 11033.67,
       "position": 1.0,
@@ -1270,7 +1270,7 @@
     },
     {
       "date": "2025-08-29",
-      "stratVal": 12178.72,
+      "stratVal": 12178.71,
       "bhVal": 11052.85,
       "spyVal": 10967.87,
       "position": 1.0,
@@ -1280,13 +1280,13 @@
       "date": "2025-09-02",
       "stratVal": 12274.53,
       "bhVal": 11139.81,
-      "spyVal": 10886.6,
+      "spyVal": 10886.59,
       "position": 1.0,
       "signalConf": 0.601
     },
     {
       "date": "2025-09-03",
-      "stratVal": 12385.64,
+      "stratVal": 12385.63,
       "bhVal": 11240.64,
       "spyVal": 10945.6,
       "position": 1.0,
@@ -1294,7 +1294,7 @@
     },
     {
       "date": "2025-09-04",
-      "stratVal": 12403.51,
+      "stratVal": 12403.5,
       "bhVal": 11256.86,
       "spyVal": 11037.07,
       "position": 1.0,
@@ -1302,7 +1302,7 @@
     },
     {
       "date": "2025-09-05",
-      "stratVal": 12464.01,
+      "stratVal": 12464.0,
       "bhVal": 11311.77,
       "spyVal": 11005.11,
       "position": 1.0,
@@ -1318,7 +1318,7 @@
     },
     {
       "date": "2025-09-09",
-      "stratVal": 12501.37,
+      "stratVal": 12501.36,
       "bhVal": 11347.53,
       "spyVal": 11057.65,
       "position": 0.5,
@@ -1326,7 +1326,7 @@
     },
     {
       "date": "2025-09-10",
-      "stratVal": 12574.13,
+      "stratVal": 12574.12,
       "bhVal": 11413.58,
       "spyVal": 11089.61,
       "position": 1.0,
@@ -1334,7 +1334,7 @@
     },
     {
       "date": "2025-09-11",
-      "stratVal": 12629.68,
+      "stratVal": 12629.67,
       "bhVal": 11464.0,
       "spyVal": 11181.77,
       "position": 1.0,
@@ -1342,7 +1342,7 @@
     },
     {
       "date": "2025-09-12",
-      "stratVal": 12737.75,
+      "stratVal": 12737.74,
       "bhVal": 11562.09,
       "spyVal": 11178.03,
       "position": 1.0,
@@ -1350,7 +1350,7 @@
     },
     {
       "date": "2025-09-15",
-      "stratVal": 12726.98,
+      "stratVal": 12726.97,
       "bhVal": 11552.32,
       "spyVal": 11237.54,
       "position": 1.0,
@@ -1358,7 +1358,7 @@
     },
     {
       "date": "2025-09-16",
-      "stratVal": 12701.58,
+      "stratVal": 12701.57,
       "bhVal": 11529.26,
       "spyVal": 11222.07,
       "position": 1.0,
@@ -1366,7 +1366,7 @@
     },
     {
       "date": "2025-09-17",
-      "stratVal": 12816.11,
+      "stratVal": 12816.1,
       "bhVal": 11633.22,
       "spyVal": 11208.12,
       "position": 1.0,
@@ -1374,7 +1374,7 @@
     },
     {
       "date": "2025-09-18",
-      "stratVal": 12902.87,
+      "stratVal": 12902.86,
       "bhVal": 11711.97,
       "spyVal": 11260.49,
       "position": 1.0,
@@ -1382,7 +1382,7 @@
     },
     {
       "date": "2025-09-19",
-      "stratVal": 12979.25,
+      "stratVal": 12979.24,
       "bhVal": 11781.31,
       "spyVal": 11316.27,
       "position": 1.0,
@@ -1390,7 +1390,7 @@
     },
     {
       "date": "2025-09-22",
-      "stratVal": 12893.04,
+      "stratVal": 12893.03,
       "bhVal": 11703.05,
       "spyVal": 11369.8,
       "position": 1.0,
@@ -1398,7 +1398,7 @@
     },
     {
       "date": "2025-09-23",
-      "stratVal": 12847.78,
+      "stratVal": 12847.77,
       "bhVal": 11661.97,
       "spyVal": 11307.91,
       "position": 1.0,
@@ -1406,23 +1406,23 @@
     },
     {
       "date": "2025-09-24",
-      "stratVal": 12792.39,
+      "stratVal": 12792.38,
       "bhVal": 11611.69,
-      "spyVal": 11271.94,
+      "spyVal": 11271.93,
       "position": 1.0,
       "signalConf": 0.602
     },
     {
       "date": "2025-09-25",
-      "stratVal": 12844.98,
-      "bhVal": 11659.42,
+      "stratVal": 12844.97,
+      "bhVal": 11659.43,
       "spyVal": 11219.93,
       "position": 1.0,
       "signalConf": 0.619
     },
     {
       "date": "2025-09-26",
-      "stratVal": 12904.46,
+      "stratVal": 12904.45,
       "bhVal": 11713.42,
       "spyVal": 11284.21,
       "position": 1.0,
@@ -1430,15 +1430,15 @@
     },
     {
       "date": "2025-09-29",
-      "stratVal": 12922.14,
+      "stratVal": 12922.13,
       "bhVal": 11745.51,
-      "spyVal": 11315.93,
+      "spyVal": 11315.92,
       "position": 0.5,
       "signalConf": 0.56
     },
     {
       "date": "2025-09-30",
-      "stratVal": 12953.13,
+      "stratVal": 12953.12,
       "bhVal": 11801.85,
       "spyVal": 11358.55,
       "position": 0.5,
@@ -1446,15 +1446,15 @@
     },
     {
       "date": "2025-10-01",
-      "stratVal": 13006.38,
+      "stratVal": 13006.37,
       "bhVal": 11850.37,
-      "spyVal": 11397.26,
+      "spyVal": 11397.25,
       "position": 1.0,
       "signalConf": 0.628
     },
     {
       "date": "2025-10-02",
-      "stratVal": 13006.38,
+      "stratVal": 13006.37,
       "bhVal": 11800.48,
       "spyVal": 11410.38,
       "position": 0.0,
@@ -1462,7 +1462,7 @@
     },
     {
       "date": "2025-10-03",
-      "stratVal": 13104.06,
+      "stratVal": 13104.05,
       "bhVal": 11889.1,
       "spyVal": 11410.21,
       "position": 1.0,
@@ -1470,7 +1470,7 @@
     },
     {
       "date": "2025-10-06",
-      "stratVal": 13035.06,
+      "stratVal": 13035.05,
       "bhVal": 11826.5,
       "spyVal": 11451.13,
       "position": 1.0,
@@ -1478,7 +1478,7 @@
     },
     {
       "date": "2025-10-07",
-      "stratVal": 13184.49,
+      "stratVal": 13184.48,
       "bhVal": 11962.08,
       "spyVal": 11408.68,
       "position": 1.0,
@@ -1486,7 +1486,7 @@
     },
     {
       "date": "2025-10-08",
-      "stratVal": 13168.53,
+      "stratVal": 13168.52,
       "bhVal": 11947.6,
       "spyVal": 11476.71,
       "position": 1.0,
@@ -1494,7 +1494,7 @@
     },
     {
       "date": "2025-10-09",
-      "stratVal": 12711.4,
+      "stratVal": 12711.39,
       "bhVal": 11532.85,
       "spyVal": 11443.46,
       "position": 1.0,
@@ -1502,7 +1502,7 @@
     },
     {
       "date": "2025-10-10",
-      "stratVal": 12981.15,
+      "stratVal": 12981.14,
       "bhVal": 11777.59,
       "spyVal": 11134.17,
       "position": 1.0,
@@ -1510,7 +1510,7 @@
     },
     {
       "date": "2025-10-13",
-      "stratVal": 12894.68,
+      "stratVal": 12894.67,
       "bhVal": 11699.14,
       "spyVal": 11305.01,
       "position": 1.0,
@@ -1518,7 +1518,7 @@
     },
     {
       "date": "2025-10-14",
-      "stratVal": 12985.68,
+      "stratVal": 12985.67,
       "bhVal": 11781.7,
       "spyVal": 11291.2,
       "position": 1.0,
@@ -1526,7 +1526,7 @@
     },
     {
       "date": "2025-10-15",
-      "stratVal": 12937.59,
+      "stratVal": 12937.58,
       "bhVal": 11738.07,
       "spyVal": 11341.33,
       "position": 1.0,
@@ -1534,7 +1534,7 @@
     },
     {
       "date": "2025-10-16",
-      "stratVal": 13022.55,
+      "stratVal": 13022.54,
       "bhVal": 11815.15,
       "spyVal": 11264.09,
       "position": 1.0,
@@ -1550,7 +1550,7 @@
     },
     {
       "date": "2025-10-20",
-      "stratVal": 13183.2,
+      "stratVal": 13183.19,
       "bhVal": 11960.9,
       "spyVal": 11445.85,
       "position": 1.0,
@@ -1558,7 +1558,7 @@
     },
     {
       "date": "2025-10-21",
-      "stratVal": 13119.69,
+      "stratVal": 13119.68,
       "bhVal": 11845.67,
       "spyVal": 11445.68,
       "position": 0.5,
@@ -1566,7 +1566,7 @@
     },
     {
       "date": "2025-10-22",
-      "stratVal": 13229.98,
+      "stratVal": 13229.97,
       "bhVal": 11945.25,
       "spyVal": 11386.17,
       "position": 1.0,
@@ -1574,7 +1574,7 @@
     },
     {
       "date": "2025-10-23",
-      "stratVal": 13300.62,
+      "stratVal": 13300.61,
       "bhVal": 12072.81,
       "spyVal": 11453.69,
       "position": 0.5,
@@ -1582,7 +1582,7 @@
     },
     {
       "date": "2025-10-24",
-      "stratVal": 13537.49,
+      "stratVal": 13537.48,
       "bhVal": 12287.81,
       "spyVal": 11547.3,
       "position": 1.0,
@@ -1598,7 +1598,7 @@
     },
     {
       "date": "2025-10-28",
-      "stratVal": 13620.14,
+      "stratVal": 13620.13,
       "bhVal": 12438.06,
       "spyVal": 11714.56,
       "position": 0.5,
@@ -1606,7 +1606,7 @@
     },
     {
       "date": "2025-10-29",
-      "stratVal": 13411.91,
+      "stratVal": 13411.9,
       "bhVal": 12247.9,
       "spyVal": 11720.19,
       "position": 1.0,
@@ -1614,7 +1614,7 @@
     },
     {
       "date": "2025-10-30",
-      "stratVal": 13444.26,
+      "stratVal": 13444.25,
       "bhVal": 12306.99,
       "spyVal": 11591.29,
       "position": 0.5,
@@ -1622,7 +1622,7 @@
     },
     {
       "date": "2025-10-31",
-      "stratVal": 13508.59,
+      "stratVal": 13508.58,
       "bhVal": 12365.87,
       "spyVal": 11629.31,
       "position": 1.0,
@@ -1630,7 +1630,7 @@
     },
     {
       "date": "2025-11-03",
-      "stratVal": 13371.49,
+      "stratVal": 13371.48,
       "bhVal": 12114.87,
       "spyVal": 11651.13,
       "position": 0.5,
@@ -1638,7 +1638,7 @@
     },
     {
       "date": "2025-11-04",
-      "stratVal": 13371.49,
+      "stratVal": 13371.48,
       "bhVal": 12193.71,
       "spyVal": 11513.03,
       "position": 0.0,
@@ -1646,7 +1646,7 @@
     },
     {
       "date": "2025-11-05",
-      "stratVal": 13246.95,
+      "stratVal": 13246.94,
       "bhVal": 11966.58,
       "spyVal": 11552.92,
       "position": 0.5,
@@ -1654,7 +1654,7 @@
     },
     {
       "date": "2025-11-06",
-      "stratVal": 13246.95,
+      "stratVal": 13246.94,
       "bhVal": 11928.82,
       "spyVal": 11428.97,
       "position": 0.0,
@@ -1662,7 +1662,7 @@
     },
     {
       "date": "2025-11-07",
-      "stratVal": 13540.03,
+      "stratVal": 13540.02,
       "bhVal": 12192.73,
       "spyVal": 11440.22,
       "position": 1.0,
@@ -1680,29 +1680,29 @@
       "date": "2025-11-11",
       "stratVal": 13521.99,
       "bhVal": 12150.67,
-      "spyVal": 11645.34,
+      "spyVal": 11645.33,
       "position": 0.0,
       "signalConf": 0.487
     },
     {
       "date": "2025-11-12",
-      "stratVal": 13245.93,
+      "stratVal": 13245.92,
       "bhVal": 11902.6,
-      "spyVal": 11651.82,
+      "spyVal": 11651.81,
       "position": 1.0,
       "signalConf": 0.576
     },
     {
       "date": "2025-11-13",
-      "stratVal": 13245.93,
+      "stratVal": 13245.92,
       "bhVal": 11911.6,
-      "spyVal": 11458.47,
+      "spyVal": 11458.46,
       "position": 0.0,
       "signalConf": 0.515
     },
     {
       "date": "2025-11-14",
-      "stratVal": 13189.37,
+      "stratVal": 13189.36,
       "bhVal": 11809.87,
       "spyVal": 11456.59,
       "position": 0.5,
@@ -1710,23 +1710,23 @@
     },
     {
       "date": "2025-11-17",
-      "stratVal": 13109.07,
+      "stratVal": 13109.06,
       "bhVal": 11666.08,
-      "spyVal": 11349.86,
+      "spyVal": 11349.85,
       "position": 0.5,
       "signalConf": 0.532
     },
     {
       "date": "2025-11-18",
-      "stratVal": 13148.2,
-      "bhVal": 11735.72,
+      "stratVal": 13148.19,
+      "bhVal": 11735.73,
       "spyVal": 11254.54,
       "position": 0.5,
       "signalConf": 0.525
     },
     {
       "date": "2025-11-19",
-      "stratVal": 12836.96,
+      "stratVal": 12836.95,
       "bhVal": 11457.92,
       "spyVal": 11298.02,
       "position": 1.0,
@@ -1734,15 +1734,15 @@
     },
     {
       "date": "2025-11-20",
-      "stratVal": 12933.4,
+      "stratVal": 12933.39,
       "bhVal": 11544.0,
-      "spyVal": 11125.82,
+      "spyVal": 11125.81,
       "position": 1.0,
       "signalConf": 0.627
     },
     {
       "date": "2025-11-21",
-      "stratVal": 13264.15,
+      "stratVal": 13264.14,
       "bhVal": 11839.22,
       "spyVal": 11236.64,
       "position": 1.0,
@@ -1750,7 +1750,7 @@
     },
     {
       "date": "2025-11-24",
-      "stratVal": 13305.03,
+      "stratVal": 13305.02,
       "bhVal": 11912.19,
       "spyVal": 11402.03,
       "position": 0.5,
@@ -1758,15 +1758,15 @@
     },
     {
       "date": "2025-11-25",
-      "stratVal": 13363.81,
+      "stratVal": 13363.8,
       "bhVal": 12017.44,
-      "spyVal": 11509.28,
+      "spyVal": 11509.27,
       "position": 0.5,
       "signalConf": 0.534
     },
     {
       "date": "2025-11-26",
-      "stratVal": 13363.81,
+      "stratVal": 13363.8,
       "bhVal": 12114.87,
       "spyVal": 11588.73,
       "position": 0.0,
@@ -1774,7 +1774,7 @@
     },
     {
       "date": "2025-11-28",
-      "stratVal": 13341.36,
+      "stratVal": 13341.35,
       "bhVal": 12074.18,
       "spyVal": 11651.99,
       "position": 0.5,
@@ -1782,7 +1782,7 @@
     },
     {
       "date": "2025-12-01",
-      "stratVal": 13393.57,
+      "stratVal": 13393.56,
       "bhVal": 12168.67,
       "spyVal": 11598.79,
       "position": 0.5,
@@ -1790,7 +1790,7 @@
     },
     {
       "date": "2025-12-02",
-      "stratVal": 13426.3,
+      "stratVal": 13426.29,
       "bhVal": 12198.41,
       "spyVal": 11620.27,
       "position": 1.0,
@@ -1798,7 +1798,7 @@
     },
     {
       "date": "2025-12-03",
-      "stratVal": 13413.81,
+      "stratVal": 13413.8,
       "bhVal": 12187.06,
       "spyVal": 11660.51,
       "position": 1.0,
@@ -1806,7 +1806,7 @@
     },
     {
       "date": "2025-12-04",
-      "stratVal": 13468.5,
+      "stratVal": 13468.49,
       "bhVal": 12236.75,
       "spyVal": 11669.04,
       "position": 1.0,
@@ -1814,7 +1814,7 @@
     },
     {
       "date": "2025-12-05",
-      "stratVal": 13442.67,
+      "stratVal": 13442.66,
       "bhVal": 12213.28,
       "spyVal": 11691.2,
       "position": 1.0,
@@ -1830,7 +1830,7 @@
     },
     {
       "date": "2025-12-09",
-      "stratVal": 13514.37,
+      "stratVal": 13514.36,
       "bhVal": 12278.42,
       "spyVal": 11646.02,
       "position": 1.0,
@@ -1838,7 +1838,7 @@
     },
     {
       "date": "2025-12-10",
-      "stratVal": 13470.66,
+      "stratVal": 13470.65,
       "bhVal": 12238.71,
       "spyVal": 11723.26,
       "position": 1.0,
@@ -1846,7 +1846,7 @@
     },
     {
       "date": "2025-12-11",
-      "stratVal": 13213.12,
+      "stratVal": 13213.11,
       "bhVal": 12004.73,
       "spyVal": 11750.54,
       "position": 1.0,
@@ -1854,7 +1854,7 @@
     },
     {
       "date": "2025-12-12",
-      "stratVal": 13146.8,
+      "stratVal": 13146.79,
       "bhVal": 11944.47,
       "spyVal": 11624.19,
       "position": 1.0,
@@ -1862,7 +1862,7 @@
     },
     {
       "date": "2025-12-15",
-      "stratVal": 13159.83,
+      "stratVal": 13159.82,
       "bhVal": 11968.14,
       "spyVal": 11606.63,
       "position": 0.5,
@@ -1870,7 +1870,7 @@
     },
     {
       "date": "2025-12-16",
-      "stratVal": 13037.86,
+      "stratVal": 13037.85,
       "bhVal": 11746.29,
       "spyVal": 11574.92,
       "position": 0.5,
@@ -1878,7 +1878,7 @@
     },
     {
       "date": "2025-12-17",
-      "stratVal": 13226.78,
+      "stratVal": 13226.77,
       "bhVal": 11916.49,
       "spyVal": 11447.55,
       "position": 1.0,
@@ -1886,7 +1886,7 @@
     },
     {
       "date": "2025-12-18",
-      "stratVal": 13399.19,
+      "stratVal": 13399.18,
       "bhVal": 12071.83,
       "spyVal": 11534.0,
       "position": 1.0,
@@ -1894,15 +1894,15 @@
     },
     {
       "date": "2025-12-19",
-      "stratVal": 13463.42,
-      "bhVal": 12129.69,
-      "spyVal": 11638.54,
+      "stratVal": 13463.41,
+      "bhVal": 12129.7,
+      "spyVal": 11638.53,
       "position": 1.0,
       "signalConf": 0.709
     },
     {
       "date": "2025-12-22",
-      "stratVal": 13526.47,
+      "stratVal": 13526.46,
       "bhVal": 12186.5,
       "spyVal": 11711.04,
       "position": 1.0,
@@ -1910,7 +1910,7 @@
     },
     {
       "date": "2025-12-23",
-      "stratVal": 13566.05,
+      "stratVal": 13566.04,
       "bhVal": 12222.16,
       "spyVal": 11764.57,
       "position": 1.0,
@@ -1918,7 +1918,7 @@
     },
     {
       "date": "2025-12-24",
-      "stratVal": 13565.18,
+      "stratVal": 13565.17,
       "bhVal": 12221.37,
       "spyVal": 11805.95,
       "position": 1.0,
@@ -1926,7 +1926,7 @@
     },
     {
       "date": "2025-12-26",
-      "stratVal": 13499.51,
+      "stratVal": 13499.5,
       "bhVal": 12162.21,
       "spyVal": 11804.75,
       "position": 1.0,
@@ -1934,15 +1934,15 @@
     },
     {
       "date": "2025-12-29",
-      "stratVal": 13468.2,
+      "stratVal": 13468.19,
       "bhVal": 12134.0,
-      "spyVal": 11762.69,
+      "spyVal": 11762.68,
       "position": 1.0,
       "signalConf": 0.639
     },
     {
       "date": "2025-12-30",
-      "stratVal": 13356.88,
+      "stratVal": 13356.87,
       "bhVal": 12033.71,
       "spyVal": 11748.32,
       "position": 1.0,
@@ -1950,7 +1950,7 @@
     },
     {
       "date": "2025-12-31",
-      "stratVal": 13331.01,
+      "stratVal": 13331.0,
       "bhVal": 12010.4,
       "spyVal": 11661.28,
       "position": 1.0,
@@ -1958,7 +1958,7 @@
     },
     {
       "date": "2026-01-02",
-      "stratVal": 13436.89,
+      "stratVal": 13436.88,
       "bhVal": 12105.8,
       "spyVal": 11682.65,
       "position": 1.0,
@@ -1966,7 +1966,7 @@
     },
     {
       "date": "2026-01-05",
-      "stratVal": 13554.96,
+      "stratVal": 13554.95,
       "bhVal": 12212.16,
       "spyVal": 11760.46,
       "position": 1.0,
@@ -1982,7 +1982,7 @@
     },
     {
       "date": "2026-01-07",
-      "stratVal": 13490.82,
+      "stratVal": 13490.81,
       "bhVal": 12154.38,
       "spyVal": 11792.27,
       "position": 1.0,
@@ -1990,7 +1990,7 @@
     },
     {
       "date": "2026-01-08",
-      "stratVal": 13558.0,
+      "stratVal": 13557.99,
       "bhVal": 12275.44,
       "spyVal": 11791.07,
       "position": 0.5,
@@ -1998,7 +1998,7 @@
     },
     {
       "date": "2026-01-09",
-      "stratVal": 13569.25,
+      "stratVal": 13569.24,
       "bhVal": 12285.62,
       "spyVal": 11869.05,
       "position": 1.0,
@@ -2006,7 +2006,7 @@
     },
     {
       "date": "2026-01-12",
-      "stratVal": 13549.13,
+      "stratVal": 13549.12,
       "bhVal": 12267.41,
       "spyVal": 11887.69,
       "position": 1.0,
@@ -2014,15 +2014,15 @@
     },
     {
       "date": "2026-01-13",
-      "stratVal": 13404.39,
-      "bhVal": 12136.35,
+      "stratVal": 13404.38,
+      "bhVal": 12136.36,
       "spyVal": 11863.92,
       "position": 1.0,
       "signalConf": 0.673
     },
     {
       "date": "2026-01-14",
-      "stratVal": 13452.64,
+      "stratVal": 13452.63,
       "bhVal": 12180.04,
       "spyVal": 11805.61,
       "position": 1.0,
@@ -2046,7 +2046,7 @@
     },
     {
       "date": "2026-01-20",
-      "stratVal": 13333.64,
+      "stratVal": 13333.63,
       "bhVal": 12072.3,
       "spyVal": 11587.06,
       "position": 1.0,
@@ -2054,7 +2054,7 @@
     },
     {
       "date": "2026-01-21",
-      "stratVal": 13430.57,
+      "stratVal": 13430.56,
       "bhVal": 12160.06,
       "spyVal": 11720.79,
       "position": 1.0,
@@ -2062,7 +2062,7 @@
     },
     {
       "date": "2026-01-22",
-      "stratVal": 13472.97,
+      "stratVal": 13472.96,
       "bhVal": 12198.45,
       "spyVal": 11782.01,
       "position": 1.0,
@@ -2070,7 +2070,7 @@
     },
     {
       "date": "2026-01-23",
-      "stratVal": 13532.26,
+      "stratVal": 13532.25,
       "bhVal": 12252.13,
       "spyVal": 11786.28,
       "position": 1.0,
@@ -2078,7 +2078,7 @@
     },
     {
       "date": "2026-01-26",
-      "stratVal": 13654.93,
+      "stratVal": 13654.92,
       "bhVal": 12363.2,
       "spyVal": 11846.14,
       "position": 1.0,
@@ -2086,7 +2086,7 @@
     },
     {
       "date": "2026-01-27",
-      "stratVal": 13677.54,
+      "stratVal": 13677.53,
       "bhVal": 12404.14,
       "spyVal": 11893.33,
       "position": 0.5,
@@ -2102,7 +2102,7 @@
     },
     {
       "date": "2026-01-29",
-      "stratVal": 13432.38,
+      "stratVal": 13432.37,
       "bhVal": 12181.8,
       "spyVal": 11868.54,
       "position": 1.0,
@@ -2110,7 +2110,7 @@
     },
     {
       "date": "2026-01-30",
-      "stratVal": 13524.61,
+      "stratVal": 13524.6,
       "bhVal": 12265.45,
       "spyVal": 11833.14,
       "position": 1.0,
@@ -2118,15 +2118,15 @@
     },
     {
       "date": "2026-02-02",
-      "stratVal": 13316.82,
+      "stratVal": 13316.81,
       "bhVal": 12077.0,
-      "spyVal": 11891.97,
+      "spyVal": 11891.96,
       "position": 1.0,
       "signalConf": 0.755
     },
     {
       "date": "2026-02-03",
-      "stratVal": 13084.19,
+      "stratVal": 13084.18,
       "bhVal": 11866.03,
       "spyVal": 11791.41,
       "position": 1.0,
@@ -2134,7 +2134,7 @@
     },
     {
       "date": "2026-02-04",
-      "stratVal": 12895.84,
+      "stratVal": 12895.83,
       "bhVal": 11695.21,
       "spyVal": 11734.3,
       "position": 1.0,
@@ -2142,23 +2142,23 @@
     },
     {
       "date": "2026-02-05",
-      "stratVal": 13168.43,
+      "stratVal": 13168.42,
       "bhVal": 11942.42,
-      "spyVal": 11587.75,
+      "spyVal": 11587.74,
       "position": 1.0,
       "signalConf": 0.637
     },
     {
       "date": "2026-02-06",
-      "stratVal": 13269.3,
-      "bhVal": 12033.9,
+      "stratVal": 13269.29,
+      "bhVal": 12033.91,
       "spyVal": 11810.05,
       "position": 1.0,
       "signalConf": 0.579
     },
     {
       "date": "2026-02-09",
-      "stratVal": 13207.74,
+      "stratVal": 13207.73,
       "bhVal": 11978.08,
       "spyVal": 11867.0,
       "position": 1.0,
@@ -2166,15 +2166,15 @@
     },
     {
       "date": "2026-02-10",
-      "stratVal": 13225.45,
+      "stratVal": 13225.44,
       "bhVal": 12010.2,
-      "spyVal": 11835.71,
+      "spyVal": 11835.7,
       "position": 0.5,
       "signalConf": 0.551
     },
     {
       "date": "2026-02-11",
-      "stratVal": 12956.46,
+      "stratVal": 12956.45,
       "bhVal": 11765.93,
       "spyVal": 11832.97,
       "position": 1.0,
@@ -2182,7 +2182,7 @@
     },
     {
       "date": "2026-02-12",
-      "stratVal": 12984.07,
+      "stratVal": 12984.06,
       "bhVal": 11791.0,
       "spyVal": 11650.16,
       "position": 1.0,
@@ -2198,7 +2198,7 @@
     },
     {
       "date": "2026-02-17",
-      "stratVal": 13067.55,
+      "stratVal": 13067.54,
       "bhVal": 11866.81,
       "spyVal": 11677.18,
       "position": 1.0,
@@ -2214,23 +2214,23 @@
     },
     {
       "date": "2026-02-19",
-      "stratVal": 13132.7,
+      "stratVal": 13132.69,
       "bhVal": 11925.97,
-      "spyVal": 11705.06,
+      "spyVal": 11705.05,
       "position": 1.0,
       "signalConf": 0.65
     },
     {
       "date": "2026-02-20",
-      "stratVal": 12973.07,
+      "stratVal": 12973.06,
       "bhVal": 11781.01,
-      "spyVal": 11789.71,
+      "spyVal": 11789.7,
       "position": 1.0,
       "signalConf": 0.689
     },
     {
       "date": "2026-02-23",
-      "stratVal": 13112.42,
+      "stratVal": 13112.41,
       "bhVal": 11907.56,
       "spyVal": 11669.32,
       "position": 1.0,
@@ -2238,15 +2238,15 @@
     },
     {
       "date": "2026-02-24",
-      "stratVal": 13302.46,
-      "bhVal": 12080.13,
+      "stratVal": 13302.45,
+      "bhVal": 12080.14,
       "spyVal": 11754.13,
       "position": 1.0,
       "signalConf": 0.626
     },
     {
       "date": "2026-02-25",
-      "stratVal": 13141.97,
+      "stratVal": 13141.96,
       "bhVal": 11934.39,
       "spyVal": 11853.32,
       "position": 1.0,
@@ -2254,7 +2254,7 @@
     },
     {
       "date": "2026-02-26",
-      "stratVal": 13120.94,
+      "stratVal": 13120.93,
       "bhVal": 11896.19,
       "spyVal": 11787.48,
       "position": 0.5,
@@ -2262,7 +2262,7 @@
     },
     {
       "date": "2026-02-27",
-      "stratVal": 13129.58,
+      "stratVal": 13129.57,
       "bhVal": 11911.87,
       "spyVal": 11730.88,
       "position": 0.5,
@@ -2270,7 +2270,7 @@
     },
     {
       "date": "2026-03-02",
-      "stratVal": 13129.58,
+      "stratVal": 13129.57,
       "bhVal": 11784.34,
       "spyVal": 11737.55,
       "position": 0.0,
@@ -2278,7 +2278,7 @@
     },
     {
       "date": "2026-03-03",
-      "stratVal": 13229.65,
+      "stratVal": 13229.64,
       "bhVal": 11963.97,
       "spyVal": 11634.09,
       "position": 0.5,
@@ -2286,7 +2286,7 @@
     },
     {
       "date": "2026-03-04",
-      "stratVal": 13189.79,
+      "stratVal": 13189.78,
       "bhVal": 11927.93,
       "spyVal": 11716.17,
       "position": 1.0,
@@ -2294,7 +2294,7 @@
     },
     {
       "date": "2026-03-05",
-      "stratVal": 13189.79,
+      "stratVal": 13189.78,
       "bhVal": 11748.49,
       "spyVal": 11650.85,
       "position": 0.0,
@@ -2302,7 +2302,7 @@
     },
     {
       "date": "2026-03-06",
-      "stratVal": 13189.79,
+      "stratVal": 13189.78,
       "bhVal": 11905.4,
       "spyVal": 11498.14,
       "position": 0.0,
@@ -2310,7 +2310,7 @@
     },
     {
       "date": "2026-03-09",
-      "stratVal": 13190.01,
+      "stratVal": 13190.0,
       "bhVal": 11905.6,
       "spyVal": 11598.86,
       "position": 1.0,
@@ -2318,7 +2318,7 @@
     },
     {
       "date": "2026-03-10",
-      "stratVal": 13189.14,
+      "stratVal": 13189.13,
       "bhVal": 11904.03,
       "spyVal": 11580.22,
       "position": 0.5,
@@ -2326,7 +2326,7 @@
     },
     {
       "date": "2026-03-11",
-      "stratVal": 12962.77,
+      "stratVal": 12962.76,
       "bhVal": 11699.72,
       "spyVal": 11565.69,
       "position": 1.0,
@@ -2342,7 +2342,7 @@
     },
     {
       "date": "2026-03-13",
-      "stratVal": 12996.84,
+      "stratVal": 12996.83,
       "bhVal": 11760.83,
       "spyVal": 11325.59,
       "position": 0.5,
@@ -2350,7 +2350,7 @@
     },
     {
       "date": "2026-03-16",
-      "stratVal": 13060.27,
+      "stratVal": 13060.26,
       "bhVal": 11818.23,
       "spyVal": 11440.85,
       "position": 1.0,
@@ -2366,15 +2366,15 @@
     },
     {
       "date": "2026-03-18",
-      "stratVal": 12837.52,
+      "stratVal": 12837.51,
       "bhVal": 11616.66,
-      "spyVal": 11310.89,
+      "spyVal": 11310.88,
       "position": 1.0,
       "signalConf": 0.672
     },
     {
       "date": "2026-03-19",
-      "stratVal": 12600.26,
+      "stratVal": 12600.25,
       "bhVal": 11401.96,
       "spyVal": 11283.01,
       "position": 1.0,
@@ -2382,7 +2382,7 @@
     },
     {
       "date": "2026-03-20",
-      "stratVal": 12744.9,
+      "stratVal": 12744.89,
       "bhVal": 11532.85,
       "spyVal": 11121.26,
       "position": 1.0,
@@ -2390,7 +2390,7 @@
     },
     {
       "date": "2026-03-23",
-      "stratVal": 12657.76,
+      "stratVal": 12657.75,
       "bhVal": 11454.0,
       "spyVal": 11238.03,
       "position": 1.0,
@@ -2398,7 +2398,7 @@
     },
     {
       "date": "2026-03-24",
-      "stratVal": 12740.99,
+      "stratVal": 12740.98,
       "bhVal": 11529.32,
       "spyVal": 11200.31,
       "position": 1.0,
@@ -2406,15 +2406,15 @@
     },
     {
       "date": "2026-03-25",
-      "stratVal": 12436.89,
-      "bhVal": 11254.13,
+      "stratVal": 12436.88,
+      "bhVal": 11254.14,
       "spyVal": 11262.73,
       "position": 1.0,
       "signalConf": 0.63
     },
     {
       "date": "2026-03-26",
-      "stratVal": 12193.92,
+      "stratVal": 12193.91,
       "bhVal": 11034.27,
       "spyVal": 11061.59,
       "position": 1.0,
@@ -2422,7 +2422,7 @@
     },
     {
       "date": "2026-03-27",
-      "stratVal": 12147.32,
+      "stratVal": 12147.31,
       "bhVal": 10949.93,
       "spyVal": 10872.97,
       "position": 0.5,
@@ -2430,15 +2430,15 @@
     },
     {
       "date": "2026-03-30",
-      "stratVal": 12352.93,
+      "stratVal": 12352.92,
       "bhVal": 11320.63,
-      "spyVal": 10836.62,
+      "spyVal": 10836.61,
       "position": 0.5,
       "signalConf": 0.546
     },
     {
       "date": "2026-03-31",
-      "stratVal": 12505.53,
+      "stratVal": 12505.52,
       "bhVal": 11460.47,
       "spyVal": 11151.61,
       "position": 1.0,
@@ -2446,7 +2446,7 @@
     },
     {
       "date": "2026-04-01",
-      "stratVal": 12512.7,
+      "stratVal": 12512.69,
       "bhVal": 11473.61,
       "spyVal": 11235.63,
       "position": 0.5,
@@ -2470,7 +2470,7 @@
     },
     {
       "date": "2026-04-07",
-      "stratVal": 12962.26,
+      "stratVal": 12962.25,
       "bhVal": 11887.66,
       "spyVal": 11303.88,
       "position": 1.0,
@@ -2478,15 +2478,15 @@
     },
     {
       "date": "2026-04-08",
-      "stratVal": 13049.95,
+      "stratVal": 13049.94,
       "bhVal": 11968.07,
-      "spyVal": 11591.79,
+      "spyVal": 11591.78,
       "position": 1.0,
       "signalConf": 0.725
     },
     {
       "date": "2026-04-09",
-      "stratVal": 13068.77,
+      "stratVal": 13068.76,
       "bhVal": 11985.33,
       "spyVal": 11658.66,
       "position": 1.0,
@@ -2494,7 +2494,7 @@
     },
     {
       "date": "2026-04-10",
-      "stratVal": 13203.93,
+      "stratVal": 13203.92,
       "bhVal": 12109.29,
       "spyVal": 11650.94,
       "position": 1.0,
@@ -2510,7 +2510,7 @@
     },
     {
       "date": "2026-04-14",
-      "stratVal": 13631.88,
+      "stratVal": 13631.87,
       "bhVal": 12501.76,
       "spyVal": 11908.15,
       "position": 1.0,
@@ -2534,7 +2534,7 @@
     },
     {
       "date": "2026-04-17",
-      "stratVal": 13832.7,
+      "stratVal": 13832.69,
       "bhVal": 12685.93,
       "spyVal": 12177.02,
       "position": 1.0,
@@ -2542,15 +2542,15 @@
     },
     {
       "date": "2026-04-20",
-      "stratVal": 13780.09,
-      "bhVal": 12637.68,
+      "stratVal": 13780.08,
+      "bhVal": 12637.69,
       "spyVal": 12152.67,
       "position": 1.0,
       "signalConf": 0.607
     },
     {
       "date": "2026-04-21",
-      "stratVal": 14010.64,
+      "stratVal": 14010.63,
       "bhVal": 12849.12,
       "spyVal": 12073.11,
       "position": 1.0,
@@ -2558,7 +2558,7 @@
     },
     {
       "date": "2026-04-22",
-      "stratVal": 13931.72,
+      "stratVal": 13931.71,
       "bhVal": 12776.75,
       "spyVal": 12195.37,
       "position": 1.0,
@@ -2566,15 +2566,15 @@
     },
     {
       "date": "2026-04-23",
-      "stratVal": 14198.2,
+      "stratVal": 14198.19,
       "bhVal": 13021.13,
-      "spyVal": 12148.05,
+      "spyVal": 12148.04,
       "position": 1.0,
       "signalConf": 0.693
     },
     {
       "date": "2026-04-24",
-      "stratVal": 14205.68,
+      "stratVal": 14205.67,
       "bhVal": 13028.0,
       "spyVal": 12242.18,
       "position": 1.0,
@@ -2582,23 +2582,23 @@
     },
     {
       "date": "2026-04-27",
-      "stratVal": 14062.82,
+      "stratVal": 14062.81,
       "bhVal": 12896.98,
-      "spyVal": 12263.28,
+      "spyVal": 12263.27,
       "position": 1.0,
       "signalConf": 0.637
     },
     {
       "date": "2026-04-28",
-      "stratVal": 14148.79,
-      "bhVal": 12975.82,
+      "stratVal": 14148.78,
+      "bhVal": 12975.83,
       "spyVal": 12203.6,
       "position": 1.0,
       "signalConf": 0.622
     },
     {
       "date": "2026-04-29",
-      "stratVal": 14280.75,
+      "stratVal": 14280.74,
       "bhVal": 13096.84,
       "spyVal": 12201.72,
       "position": 1.0,
@@ -2606,7 +2606,7 @@
     },
     {
       "date": "2026-04-30",
-      "stratVal": 14417.84,
+      "stratVal": 14417.83,
       "bhVal": 13222.57,
       "spyVal": 12323.12,
       "position": 1.0,
@@ -2614,7 +2614,7 @@
     },
     {
       "date": "2026-05-01",
-      "stratVal": 14390.68,
+      "stratVal": 14390.67,
       "bhVal": 13197.66,
       "spyVal": 12357.24,
       "position": 1.0,
@@ -2622,7 +2622,7 @@
     },
     {
       "date": "2026-05-04",
-      "stratVal": 14577.38,
+      "stratVal": 14577.37,
       "bhVal": 13368.88,
       "spyVal": 12311.97,
       "position": 1.0,
@@ -2630,7 +2630,7 @@
     },
     {
       "date": "2026-05-05",
-      "stratVal": 14880.22,
+      "stratVal": 14880.21,
       "bhVal": 13646.61,
       "spyVal": 12410.74,
       "position": 1.0,
@@ -2638,7 +2638,7 @@
     },
     {
       "date": "2026-05-06",
-      "stratVal": 14862.47,
+      "stratVal": 14862.46,
       "bhVal": 13630.33,
       "spyVal": 12583.24,
       "position": 1.0,
@@ -2646,7 +2646,7 @@
     },
     {
       "date": "2026-05-07",
-      "stratVal": 15210.86,
+      "stratVal": 15210.85,
       "bhVal": 13949.84,
       "spyVal": 12544.66,
       "position": 1.0,
@@ -2654,7 +2654,7 @@
     },
     {
       "date": "2026-05-08",
-      "stratVal": 15254.91,
+      "stratVal": 15254.9,
       "bhVal": 13990.24,
       "spyVal": 12648.23,
       "position": 1.0,
@@ -2662,7 +2662,7 @@
     },
     {
       "date": "2026-05-11",
-      "stratVal": 15125.52,
+      "stratVal": 15125.51,
       "bhVal": 13871.58,
       "spyVal": 12677.04,
       "position": 1.0,
@@ -2670,15 +2670,15 @@
     },
     {
       "date": "2026-05-12",
-      "stratVal": 15285.28,
+      "stratVal": 15285.27,
       "bhVal": 14018.1,
-      "spyVal": 12657.84,
+      "spyVal": 12657.83,
       "position": 1.0,
       "signalConf": 0.738
     },
     {
       "date": "2026-05-13",
-      "stratVal": 15393.93,
+      "stratVal": 15393.92,
       "bhVal": 14117.73,
       "spyVal": 12728.65,
       "position": 1.0,
@@ -2686,7 +2686,7 @@
     },
     {
       "date": "2026-05-14",
-      "stratVal": 15161.67,
+      "stratVal": 15161.66,
       "bhVal": 13904.73,
       "spyVal": 12829.14,
       "position": 1.0,
@@ -2694,7 +2694,7 @@
     },
     {
       "date": "2026-05-15",
-      "stratVal": 15096.44,
+      "stratVal": 15096.43,
       "bhVal": 13844.91,
       "spyVal": 12674.81,
       "position": 1.0,
@@ -2702,15 +2702,15 @@
     },
     {
       "date": "2026-05-18",
-      "stratVal": 15003.41,
+      "stratVal": 15003.4,
       "bhVal": 13759.59,
-      "spyVal": 12665.9,
+      "spyVal": 12665.89,
       "position": 1.0,
       "signalConf": 0.696
     },
     {
       "date": "2026-05-19",
-      "stratVal": 15251.92,
+      "stratVal": 15251.91,
       "bhVal": 13987.5,
       "spyVal": 12581.53,
       "position": 1.0,
@@ -2718,7 +2718,7 @@
     },
     {
       "date": "2026-05-20",
-      "stratVal": 15266.46,
+      "stratVal": 15266.45,
       "bhVal": 14014.17,
       "spyVal": 12710.48,
       "position": 0.5,
@@ -2726,7 +2726,7 @@
     },
     {
       "date": "2026-05-21",
-      "stratVal": 15331.2,
+      "stratVal": 15331.19,
       "bhVal": 14073.6,
       "spyVal": 12735.68,
       "position": 1.0,
@@ -2734,39 +2734,39 @@
     },
     {
       "date": "2026-05-22",
-      "stratVal": 15603.41,
+      "stratVal": 15603.4,
       "bhVal": 14323.48,
-      "spyVal": 12785.76,
+      "spyVal": 12785.75,
       "position": 1.0,
       "signalConf": 0.574
     },
     {
       "date": "2026-05-26",
-      "stratVal": 15594.54,
+      "stratVal": 15594.53,
       "bhVal": 14307.2,
-      "spyVal": 12870.64,
+      "spyVal": 12870.63,
       "position": 0.5,
       "signalConf": 0.525
     },
     {
       "date": "2026-05-27",
-      "stratVal": 15726.02,
+      "stratVal": 15726.01,
       "bhVal": 14427.83,
-      "spyVal": 12868.41,
+      "spyVal": 12868.4,
       "position": 1.0,
       "signalConf": 0.61
     },
     {
       "date": "2026-05-28",
-      "stratVal": 15783.96,
+      "stratVal": 15783.95,
       "bhVal": 14480.98,
-      "spyVal": 12939.4,
+      "spyVal": 12939.39,
       "position": 1.0,
       "signalConf": 0.641
     },
     {
       "date": "2026-05-29",
-      "stratVal": 15878.66,
+      "stratVal": 15878.65,
       "bhVal": 14567.87,
       "spyVal": 12971.63,
       "position": 1.0,
@@ -2774,15 +2774,15 @@
     },
     {
       "date": "2026-06-01",
-      "stratVal": 15951.78,
+      "stratVal": 15951.77,
       "bhVal": 14634.95,
-      "spyVal": 13006.96,
+      "spyVal": 13006.95,
       "position": 1.0,
       "signalConf": 0.609
     },
     {
       "date": "2026-06-02",
-      "stratVal": 15910.09,
+      "stratVal": 15910.08,
       "bhVal": 14596.7,
       "spyVal": 13024.62,
       "position": 1.0,
@@ -2790,7 +2790,7 @@
     },
     {
       "date": "2026-06-03",
-      "stratVal": 15833.13,
+      "stratVal": 15833.12,
       "bhVal": 14526.09,
       "spyVal": 12933.22,
       "position": 1.0,
@@ -2798,7 +2798,7 @@
     },
     {
       "date": "2026-06-04",
-      "stratVal": 15073.12,
+      "stratVal": 15073.11,
       "bhVal": 13828.82,
       "spyVal": 12982.09,
       "position": 1.0,
@@ -2806,7 +2806,7 @@
     },
     {
       "date": "2026-06-05",
-      "stratVal": 15073.12,
+      "stratVal": 15073.11,
       "bhVal": 14044.77,
       "spyVal": 12647.03,
       "position": 0.0,
@@ -2814,7 +2814,7 @@
     },
     {
       "date": "2026-06-08",
-      "stratVal": 15073.12,
+      "stratVal": 15073.11,
       "bhVal": 13883.15,
       "spyVal": 12675.67,
       "position": 0.0,
@@ -2822,7 +2822,7 @@
     },
     {
       "date": "2026-06-09",
-      "stratVal": 15073.12,
+      "stratVal": 15073.11,
       "bhVal": 13605.82,
       "spyVal": 12638.46,
       "position": 0.0,
@@ -2830,23 +2830,23 @@
     },
     {
       "date": "2026-06-10",
-      "stratVal": 15073.12,
-      "bhVal": 14065.36,
+      "stratVal": 15073.11,
+      "bhVal": 14065.37,
       "spyVal": 12439.21,
       "position": 0.0,
       "signalConf": 0.418
     },
     {
       "date": "2026-06-11",
-      "stratVal": 15073.12,
-      "bhVal": 14148.13,
+      "stratVal": 15073.11,
+      "bhVal": 14148.14,
       "spyVal": 12650.63,
       "position": 0.0,
       "signalConf": 0.435
     },
     {
       "date": "2026-06-12",
-      "stratVal": 15073.12,
+      "stratVal": 15073.11,
       "bhVal": 14592.58,
       "spyVal": 12719.05,
       "position": 0.0,
@@ -2854,7 +2854,7 @@
     },
     {
       "date": "2026-06-15",
-      "stratVal": 15073.12,
+      "stratVal": 15073.11,
       "bhVal": 14315.24,
       "spyVal": 12943.34,
       "position": 0.0,
@@ -2862,7 +2862,7 @@
     },
     {
       "date": "2026-06-16",
-      "stratVal": 15073.12,
+      "stratVal": 15073.11,
       "bhVal": 14171.08,
       "spyVal": 12866.18,
       "position": 0.0,
@@ -2870,31 +2870,31 @@
     },
     {
       "date": "2026-06-17",
-      "stratVal": 15073.12,
+      "stratVal": 15073.11,
       "bhVal": 14526.29,
-      "spyVal": 12705.51,
+      "spyVal": 12705.5,
       "position": 0.0,
       "signalConf": 0.385
     },
     {
       "date": "2026-06-18",
-      "stratVal": 15073.12,
-      "bhVal": 14489.82,
+      "stratVal": 15073.11,
+      "bhVal": 14489.83,
       "spyVal": 12837.6,
       "position": 0.0,
       "signalConf": 0.486
     },
     {
       "date": "2026-06-22",
-      "stratVal": 15073.12,
+      "stratVal": 15073.11,
       "bhVal": 14012.69,
-      "spyVal": 12797.21,
+      "spyVal": 12797.2,
       "position": 0.0,
       "signalConf": 0.473
     },
     {
       "date": "2026-06-23",
-      "stratVal": 15073.12,
+      "stratVal": 15073.11,
       "bhVal": 13953.19,
       "spyVal": 12611.36,
       "position": 0.0,
@@ -2902,7 +2902,7 @@
     },
     {
       "date": "2026-06-24",
-      "stratVal": 15073.12,
+      "stratVal": 15073.11,
       "bhVal": 14066.29,
       "spyVal": 12605.52,
       "position": 0.0,
@@ -2910,7 +2910,7 @@
     },
     {
       "date": "2026-06-25",
-      "stratVal": 15073.12,
+      "stratVal": 15073.11,
       "bhVal": 13872.69,
       "spyVal": 12623.74,
       "position": 0.0,
@@ -2918,23 +2918,23 @@
     },
     {
       "date": "2026-06-26",
-      "stratVal": 15447.75,
+      "stratVal": 15447.74,
       "bhVal": 14217.48,
-      "spyVal": 12532.46,
+      "spyVal": 12532.45,
       "position": 1.0,
       "signalConf": 0.607
     },
     {
       "date": "2026-06-29",
-      "stratVal": 15447.75,
+      "stratVal": 15447.74,
       "bhVal": 14459.39,
-      "spyVal": 12738.93,
+      "spyVal": 12738.92,
       "position": 0.0,
       "signalConf": 0.445
     },
     {
       "date": "2026-06-30",
-      "stratVal": 15447.75,
+      "stratVal": 15447.74,
       "bhVal": 14238.89,
       "spyVal": 12838.12,
       "position": 0.0,
@@ -2942,7 +2942,7 @@
     },
     {
       "date": "2026-07-01",
-      "stratVal": 15447.75,
+      "stratVal": 15447.74,
       "bhVal": 13992.07,
       "spyVal": 12820.76,
       "position": 0.0,
@@ -2950,7 +2950,7 @@
     },
     {
       "date": "2026-07-02",
-      "stratVal": 15447.75,
+      "stratVal": 15447.74,
       "bhVal": 14192.74,
       "spyVal": 12803.91,
       "position": 0.0,
@@ -2958,15 +2958,15 @@
     },
     {
       "date": "2026-07-06",
-      "stratVal": 15447.75,
+      "stratVal": 15447.74,
       "bhVal": 13929.83,
-      "spyVal": 12915.66,
+      "spyVal": 12915.65,
       "position": 0.0,
       "signalConf": 0.392
     },
     {
       "date": "2026-07-07",
-      "stratVal": 15447.75,
+      "stratVal": 15447.74,
       "bhVal": 13969.29,
       "spyVal": 12854.28,
       "position": 0.0,
@@ -2974,7 +2974,7 @@
     },
     {
       "date": "2026-07-08",
-      "stratVal": 15576.3,
+      "stratVal": 15576.29,
       "bhVal": 14201.78,
       "spyVal": 12814.57,
       "position": 0.5,
@@ -2982,7 +2982,7 @@
     },
     {
       "date": "2026-07-09",
-      "stratVal": 15600.31,
+      "stratVal": 15600.3,
       "bhVal": 14245.56,
       "spyVal": 12923.05,
       "position": 0.5,
@@ -2990,7 +2990,7 @@
     },
     {
       "date": "2026-07-10",
-      "stratVal": 15452.26,
+      "stratVal": 15452.25,
       "bhVal": 13975.18,
       "spyVal": 12978.75,
       "position": 0.5,
@@ -2998,15 +2998,15 @@
     },
     {
       "date": "2026-07-13",
-      "stratVal": 15538.56,
-      "bhVal": 14131.28,
+      "stratVal": 15538.55,
+      "bhVal": 14131.29,
       "spyVal": 12879.38,
       "position": 0.5,
       "signalConf": 0.526
     },
     {
       "date": "2026-07-14",
-      "stratVal": 15538.56,
+      "stratVal": 15538.55,
       "bhVal": 14093.0,
       "spyVal": 12925.11,
       "position": 0.0,
@@ -3014,18 +3014,18 @@
     },
     {
       "date": "2026-07-15",
-      "stratVal": 15538.56,
+      "stratVal": 15538.55,
       "bhVal": 14090.84,
       "spyVal": 12976.34,
       "position": 0.0,
-      "signalConf": 0.515
+      "signalConf": 0.489
     }
   ],
   "monthly": [
     {
       "month": "2025-01",
-      "stratRet": 0.016913,
-      "bhRet": 0.009804,
+      "stratRet": 0.016912,
+      "bhRet": 0.009803,
       "trades": 7
     },
     {
@@ -3036,7 +3036,7 @@
     },
     {
       "month": "2025-03",
-      "stratRet": -0.008691,
+      "stratRet": -0.008692,
       "bhRet": -0.047571,
       "trades": 20
     },
@@ -3141,8 +3141,8 @@
     {
       "name": "Logistic Regression",
       "train": 61.16,
-      "test": 57.49,
-      "gap": 3.68,
+      "test": 57.75,
+      "gap": 3.41,
       "status": "mild overfit",
       "cv": [
         52.9,
@@ -3157,9 +3157,9 @@
     },
     {
       "name": "Random Forest",
-      "train": 62.49,
+      "train": 62.57,
       "test": 55.61,
-      "gap": 6.87,
+      "gap": 6.96,
       "status": "mild overfit",
       "cv": [
         55.9,
@@ -3174,19 +3174,19 @@
     },
     {
       "name": "Gradient Boosting",
-      "train": 73.44,
-      "test": 57.22,
-      "gap": 16.22,
+      "train": 73.53,
+      "test": 57.49,
+      "gap": 16.04,
       "status": "overfit",
       "cv": [
         52.5,
         49.0,
         54.4,
-        56.7,
+        56.3,
         54.0
       ],
-      "cvMean": 53.31,
-      "cvStd": 2.52,
+      "cvMean": 53.23,
+      "cvStd": 2.42,
       "isBest": false
     }
   ],
@@ -3197,47 +3197,47 @@
     },
     {
       "feature": "vix_close",
-      "importance": 0.250464
+      "importance": 0.250465
     },
     {
       "feature": "cons_vol_accel",
-      "importance": 0.243717
+      "importance": 0.243719
     },
     {
       "feature": "cons_vol_ratio",
-      "importance": 0.230593
+      "importance": 0.23059
     },
     {
       "feature": "qqq_rvol_5d",
-      "importance": 0.180286
+      "importance": 0.180283
     },
     {
       "feature": "qqq_drawdown",
-      "importance": 0.152095
+      "importance": 0.152096
     },
     {
       "feature": "qqq_price_ma50_ratio",
-      "importance": 0.145301
+      "importance": 0.145302
     },
     {
       "feature": "cons_bb_width",
-      "importance": 0.135888
+      "importance": 0.135889
     },
     {
       "feature": "cons_rvol_21d",
-      "importance": 0.133525
+      "importance": 0.133522
     },
     {
       "feature": "vix_z",
-      "importance": 0.126431
+      "importance": 0.126432
     },
     {
       "feature": "qqq_macd_hist_z",
-      "importance": 0.124587
+      "importance": 0.124588
     },
     {
       "feature": "qqq_bb_pos",
-      "importance": 0.122461
+      "importance": 0.122459
     }
   ],
   "trades": [
@@ -3305,11 +3305,11 @@
       "id": 5,
       "entryDate": "2025-03-28",
       "exitDate": "2025-04-09",
-      "entryVal": 9674.21,
+      "entryVal": 9674.2,
       "exitVal": 9932.29,
       "entryQqq": 466.17,
       "exitQqq": 463.25,
-      "pl": 258.09,
+      "pl": 258.08,
       "ret": 2.668,
       "days": 12,
       "win": true,
@@ -3320,7 +3320,7 @@
       "id": 6,
       "entryDate": "2025-04-16",
       "exitDate": "2025-06-02",
-      "entryVal": 9930.51,
+      "entryVal": 9930.5,
       "exitVal": 11300.12,
       "entryQqq": 441.56,
       "exitQqq": 520.12,
@@ -3335,8 +3335,8 @@
       "id": 7,
       "entryDate": "2025-06-03",
       "exitDate": "2025-06-04",
-      "entryVal": 11315.88,
-      "exitVal": 11315.88,
+      "entryVal": 11315.87,
+      "exitVal": 11315.87,
       "entryQqq": 524.18,
       "exitQqq": 525.65,
       "pl": 0.0,
@@ -3365,8 +3365,8 @@
       "id": 9,
       "entryDate": "2025-07-15",
       "exitDate": "2025-10-02",
-      "entryVal": 12070.23,
-      "exitVal": 13006.38,
+      "entryVal": 12070.22,
+      "exitVal": 13006.37,
       "entryQqq": 554.05,
       "exitQqq": 603.53,
       "pl": 936.15,
@@ -3380,8 +3380,8 @@
       "id": 10,
       "entryDate": "2025-10-03",
       "exitDate": "2025-11-04",
-      "entryVal": 13104.06,
-      "exitVal": 13371.49,
+      "entryVal": 13104.05,
+      "exitVal": 13371.48,
       "entryQqq": 600.98,
       "exitQqq": 617.0,
       "pl": 267.43,
@@ -3395,8 +3395,8 @@
       "id": 11,
       "entryDate": "2025-11-05",
       "exitDate": "2025-11-06",
-      "entryVal": 13246.95,
-      "exitVal": 13246.95,
+      "entryVal": 13246.94,
+      "exitVal": 13246.94,
       "entryQqq": 621.01,
       "exitQqq": 609.44,
       "pl": 0.0,
@@ -3410,7 +3410,7 @@
       "id": 12,
       "entryDate": "2025-11-07",
       "exitDate": "2025-11-11",
-      "entryVal": 13540.03,
+      "entryVal": 13540.02,
       "exitVal": 13521.99,
       "entryQqq": 607.52,
       "exitQqq": 619.31,
@@ -3425,8 +3425,8 @@
       "id": 13,
       "entryDate": "2025-11-12",
       "exitDate": "2025-11-13",
-      "entryVal": 13245.93,
-      "exitVal": 13245.93,
+      "entryVal": 13245.92,
+      "exitVal": 13245.92,
       "entryQqq": 618.82,
       "exitQqq": 606.19,
       "pl": 0.0,
@@ -3440,8 +3440,8 @@
       "id": 14,
       "entryDate": "2025-11-14",
       "exitDate": "2025-11-26",
-      "entryVal": 13189.37,
-      "exitVal": 13363.81,
+      "entryVal": 13189.36,
+      "exitVal": 13363.8,
       "entryQqq": 606.64,
       "exitQqq": 612.03,
       "pl": 174.44,
@@ -3455,8 +3455,8 @@
       "id": 15,
       "entryDate": "2025-11-28",
       "exitDate": "2026-03-02",
-      "entryVal": 13341.36,
-      "exitVal": 13129.58,
+      "entryVal": 13341.35,
+      "exitVal": 13129.57,
       "entryQqq": 617.0,
       "exitQqq": 606.66,
       "pl": -211.78,
@@ -3470,8 +3470,8 @@
       "id": 16,
       "entryDate": "2026-03-03",
       "exitDate": "2026-03-05",
-      "entryVal": 13229.65,
-      "exitVal": 13189.79,
+      "entryVal": 13229.64,
+      "exitVal": 13189.78,
       "entryQqq": 600.16,
       "exitQqq": 607.48,
       "pl": -39.86,
@@ -3485,7 +3485,7 @@
       "id": 17,
       "entryDate": "2026-03-09",
       "exitDate": "2026-04-06",
-      "entryVal": 13190.01,
+      "entryVal": 13190.0,
       "exitVal": 12587.99,
       "entryQqq": 606.33,
       "exitQqq": 587.85,
@@ -3500,8 +3500,8 @@
       "id": 18,
       "entryDate": "2026-04-07",
       "exitDate": "2026-06-05",
-      "entryVal": 12962.26,
-      "exitVal": 15073.12,
+      "entryVal": 12962.25,
+      "exitVal": 15073.11,
       "entryQqq": 587.94,
       "exitQqq": 704.29,
       "pl": 2110.86,
@@ -3515,8 +3515,8 @@
       "id": 19,
       "entryDate": "2026-06-26",
       "exitDate": "2026-06-29",
-      "entryVal": 15447.75,
-      "exitVal": 15447.75,
+      "entryVal": 15447.74,
+      "exitVal": 15447.74,
       "entryQqq": 706.52,
       "exitQqq": 724.08,
       "pl": 0.0,
@@ -3530,8 +3530,8 @@
       "id": 20,
       "entryDate": "2026-07-08",
       "exitDate": "2026-07-14",
-      "entryVal": 15576.3,
-      "exitVal": 15538.56,
+      "entryVal": 15576.29,
+      "exitVal": 15538.55,
       "entryQqq": 711.44,
       "exitQqq": 719.69,
       "pl": -37.73,
@@ -3544,13 +3544,13 @@
   ],
   "confusionMatrix": {
     "tp": 201,
-    "fp": 146,
-    "tn": 14,
+    "fp": 145,
+    "tn": 15,
     "fn": 13,
-    "precision": 0.579,
+    "precision": 0.581,
     "recall": 0.939,
-    "f1": 0.717,
-    "accuracy": 0.575
+    "f1": 0.718,
+    "accuracy": 0.578
   },
   "rollingMetrics": [
     {
@@ -4443,15 +4443,15 @@
     },
     {
       "predDate": "2026-07-15",
-      "predicted": "UP",
-      "confidence": 51.5,
+      "predicted": "DOWN",
+      "confidence": 51.1,
       "actual": "DOWN",
-      "correct": false,
+      "correct": true,
       "actualReturn": -0.015
     }
   ],
   "meta": {
-    "exportedAt": "2026-07-16T00:02:36.208114",
+    "exportedAt": "2026-07-16T04:31:42.462055",
     "modelTrainedOn": 1205,
     "testSize": 374,
     "version": "v6"
