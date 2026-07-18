@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta property="og:title" content="QQQ.predict · will the QQQ go up tomorrow?">
-<meta property="og:description" content="A machine learning model makes one public call every trading day. Every hit and miss is logged. Currently 61.29% accurate over 62 real calls.">
+<meta property="og:description" content="A machine learning model makes one public call every trading day. Every hit and miss is logged live.">
 <meta property="og:image" content="https://oliverrahman.github.io/qqqpredict/QQQPredictLogo.png">
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -276,8 +276,8 @@ body{
 // Counts only NYSE-open days (skips weekends + US market holidays), so it
 // never over-counts. Once your export ships forwardTestDays, this is ignored.
 function forwardTestDays(){
-  const anchor = new Date(Date.UTC(2026,5,30)); // 2026-06-30
-  const anchorCount = 52;
+  const anchor = new Date(Date.UTC(2026,6,17)); // 2026-07-17 (month is 0-indexed)
+  const anchorCount = 64;
   const holidays = new Set([
     '2026-07-03','2026-09-07','2026-11-26','2026-12-25',
     '2027-01-01','2027-01-18','2027-02-15','2027-03-26',
