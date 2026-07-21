@@ -328,5 +328,10 @@
     "predDate": "2026-07-21",
     "predicted": "UP",
     "confidence": 50.7
+  },
+  {
+    "predDate": "2026-07-22",
+    "predicted": "UP",
+    "confidence": 50.1
   }
 ]
