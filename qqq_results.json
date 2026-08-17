@@ -9,13 +9,13 @@
     "dataDate": "2026-08-14",
     "predDate": "2026-08-18",
     "forwardTestDays": 72,
-    "runTimestamp": "20260817_2015"
+    "runTimestamp": "20260817_2020"
   },
   "metrics": {
-    "stratTotal": 48.21,
-    "bhTotal": 36.27,
-    "stratAnn": 30.27,
-    "bhAnn": 23.12,
+    "stratTotal": 48.2,
+    "bhTotal": 36.26,
+    "stratAnn": 30.26,
+    "bhAnn": 23.11,
     "stratSharpe": 1.19,
     "bhSharpe": 0.8,
     "stratDD": -13.86,
@@ -23,7 +23,7 @@
     "winRate": 56.06,
     "tradeCount": 330,
     "daysInMkt": 88.0,
-    "finalVal": 14821.43,
+    "finalVal": 14819.81,
     "startDate": "2025-02-18",
     "endDate": "2026-08-14"
   },
@@ -3022,8 +3022,8 @@
     },
     {
       "date": "2026-08-14",
-      "stratVal": 14821.43,
-      "bhVal": 13627.04,
+      "stratVal": 14819.81,
+      "bhVal": 13625.54,
       "spyVal": 12913.23,
       "position": 1.0,
       "signalConf": 0.633
@@ -3140,8 +3140,8 @@
     },
     {
       "month": "2026-08",
-      "stratRet": 0.020877,
-      "bhRet": 0.042139,
+      "stratRet": 0.020765,
+      "bhRet": 0.042024,
       "trades": 7
     }
   ],
@@ -3569,11 +3569,11 @@
       "entryDate": "2026-08-06",
       "exitDate": "2026-08-14 (open)",
       "entryVal": 14688.57,
-      "exitVal": 14821.43,
+      "exitVal": 14819.81,
       "entryQqq": 714.65,
       "exitQqq": 731.07,
-      "pl": 132.86,
-      "ret": 0.905,
+      "pl": 131.24,
+      "ret": 0.893,
       "days": 8,
       "win": true,
       "entryConf": 0.642,
@@ -4585,7 +4585,7 @@
     }
   ],
   "meta": {
-    "exportedAt": "2026-08-17T20:15:06.500365",
+    "exportedAt": "2026-08-17T20:20:32.767227",
     "modelTrainedOn": 1226,
     "testSize": 375,
     "version": "v6"
